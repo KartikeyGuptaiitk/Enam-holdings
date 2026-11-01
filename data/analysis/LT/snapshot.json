@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      51024,
+      55128,
+      67079,
+      55120,
+      61555,
+      64668,
+      74392,
+      63679,
+      67984,
+      71450,
+      82762,
+      67942,
+      78750
+    ],
+    "current": 78750,
+    "prev": 67942,
+    "year": 67984,
+    "qoq": 15.90768596744282,
+    "yoy": 15.836079077429984,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "LT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 51,024 | 55,128 | 67,079 | 55,120 | 61,555 | 64,668 | 74,392 | 63,679 | 67,984 | 71,450 | 82,762 | 67,942 | 78,750",
+      "url": "https://www.screener.in/company/LT/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      7040,
+      7199,
+      8653,
+      7046,
+      7917,
+      7898,
+      9875,
+      8024,
+      8514,
+      9191,
+      10419,
+      8148,
+      8814
+    ],
+    "current": 8814,
+    "prev": 8148,
+    "year": 8514,
+    "qoq": 8.173784977908689,
+    "yoy": 3.5236081747709656,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "LT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 4,991 | 4,772 | 6,422 | 4,677 | 5,555 | 5,333 | 8,014 | 5,860 | 6,336 | 5,370 | 8,410 | 6,922 | 7,641\nInterest | 2,272 | 2,344 | 2,345 | 2,292 | 2,439 | 2,486 | 2,419 | 2,488 | 2,470 | 2,399 | 2,488 | 2,571 | 2,442\nDepreciation | 910 | 921 | 1,021 | 998 | 1,024 | 1,047 | 1,052 | 1,033 | 1,092 | 1,072 | 1,168 | 1,032 | 1,037\nOther Income + | 1,133 | 838 | 1,135 | 921 | 1,101 | 968 | 1,610 | 1,357 | 1,384 | -350 | 1,647 | 2,377 | 2,306",
+      "url": "https://www.screener.in/company/LT/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      4991,
+      4772,
+      6422,
+      4677,
+      5555,
+      5333,
+      8014,
+      5860,
+      6336,
+      5370,
+      8410,
+      6922,
+      7641
+    ],
+    "current": 7641,
+    "prev": 6922,
+    "year": 6336,
+    "qoq": 10.387171337763652,
+    "yoy": 20.59659090909091,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "LT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 4,991 | 4,772 | 6,422 | 4,677 | 5,555 | 5,333 | 8,014 | 5,860 | 6,336 | 5,370 | 8,410 | 6,922 | 7,641",
+      "url": "https://www.screener.in/company/LT/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      3846,
+      3593,
+      5013,
+      3445,
+      4099,
+      3974,
+      6156,
+      4318,
+      4678,
+      3825,
+      6133,
+      4988,
+      5949
+    ],
+    "current": 5949,
+    "prev": 4988,
+    "year": 4678,
+    "qoq": 19.26623897353649,
+    "yoy": 27.169730654125697,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "LT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 3,846 | 3,593 | 5,013 | 3,445 | 4,099 | 3,974 | 6,156 | 4,318 | 4,678 | 3,825 | 6,133 | 4,988 | 5,949",
+      "url": "https://www.screener.in/company/LT/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      23.45,
+      21.44,
+      31.98,
+      20.26,
+      24.69,
+      24.43,
+      39.97,
+      26.3,
+      28.54,
+      23.37,
+      38.71,
+      29.97,
+      37.81
+    ],
+    "current": 37.81,
+    "prev": 29.97,
+    "year": 28.54,
+    "qoq": 26.159492826159504,
+    "yoy": 32.48072880168186,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "LT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 23.45 | 21.44 | 31.98 | 20.26 | 24.69 | 24.43 | 39.97 | 26.30 | 28.54 | 23.37 | 38.71 | 29.97 | 37.81",
+      "url": "https://www.screener.in/company/LT/consolidated/"
+    }
+  }
+]

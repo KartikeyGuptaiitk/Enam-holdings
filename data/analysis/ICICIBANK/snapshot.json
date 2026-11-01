@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Profit before tax",
+    "values": [
+      15160,
+      15142,
+      16154,
+      16761,
+      18496,
+      18483,
+      19113,
+      19494,
+      19065,
+      17754,
+      20744,
+      21307,
+      23115
+    ],
+    "current": 23115,
+    "prev": 21307,
+    "year": 19065,
+    "qoq": 8.485474257286338,
+    "yoy": 21.24311565696302,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "ICICIBANK-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 15,160 | 15,142 | 16,154 | 16,761 | 18,496 | 18,483 | 19,113 | 19,494 | 19,065 | 17,754 | 20,744 | 21,307 | 23,115",
+      "url": "https://www.screener.in/company/ICICIBANK/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      11351,
+      11515,
+      12200,
+      12463,
+      13906,
+      13847,
+      14354,
+      14456,
+      14318,
+      13481,
+      15681,
+      16276,
+      17389
+    ],
+    "current": 17389,
+    "prev": 16276,
+    "year": 14318,
+    "qoq": 6.838289506021135,
+    "yoy": 21.448526330493088,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "ICICIBANK-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 11,351 | 11,515 | 12,200 | 12,463 | 13,906 | 13,847 | 14,354 | 14,456 | 14,318 | 13,481 | 15,681 | 16,276 | 17,389",
+      "url": "https://www.screener.in/company/ICICIBANK/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      15.56,
+      15.76,
+      16.62,
+      16.62,
+      18.38,
+      18.25,
+      18.96,
+      19,
+      18.7,
+      17.53,
+      20.61,
+      21.52,
+      22.75
+    ],
+    "current": 22.75,
+    "prev": 21.52,
+    "year": 18.7,
+    "qoq": 5.71561338289963,
+    "yoy": 21.65775401069519,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "ICICIBANK-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 15.56 | 15.76 | 16.62 | 16.62 | 18.38 | 18.25 | 18.96 | 19.00 | 18.70 | 17.53 | 20.61 | 21.52 | 22.75",
+      "url": "https://www.screener.in/company/ICICIBANK/consolidated/"
+    }
+  }
+]

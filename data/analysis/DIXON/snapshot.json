@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      4943,
+      4818,
+      4658,
+      6580,
+      11534,
+      10454,
+      10293,
+      12836,
+      14855,
+      10672,
+      10511,
+      15548,
+      21794
+    ],
+    "current": 21794,
+    "prev": 15548,
+    "year": 14855,
+    "qoq": 40.17236943658348,
+    "yoy": 46.711544934365534,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "DIXON-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 4,943 | 4,818 | 4,658 | 6,580 | 11,534 | 10,454 | 10,293 | 12,836 | 14,855 | 10,672 | 10,511 | 15,548 | 21,794",
+      "url": "https://www.screener.in/company/DIXON/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      199,
+      185,
+      183,
+      248,
+      427,
+      391,
+      443,
+      484,
+      561,
+      415,
+      409,
+      463,
+      596
+    ],
+    "current": 596,
+    "prev": 463,
+    "year": 561,
+    "qoq": 28.725701943844495,
+    "yoy": 6.23885918003565,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "DIXON-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 149 | 126 | 130 | 180 | 529 | 285 | 576 | 366 | 924 | 412 | 370 | 869 | 532\nInterest | 17 | 22 | 21 | 29 | 38 | 41 | 46 | 33 | 38 | 43 | 24 | 24 | 26\nDepreciation | 36 | 41 | 51 | 55 | 66 | 75 | 86 | 93 | 96 | 99 | 105 | 107 | 110\nOther Income + | 3 | 4 | 19 | 16 | 206 | 10 | 265 | 8 | 497 | 139 | 90 | 537 | 72",
+      "url": "https://www.screener.in/company/DIXON/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      149,
+      126,
+      130,
+      180,
+      529,
+      285,
+      576,
+      366,
+      924,
+      412,
+      370,
+      869,
+      532
+    ],
+    "current": 532,
+    "prev": 869,
+    "year": 924,
+    "qoq": -38.780207134637514,
+    "yoy": -42.42424242424242,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "DIXON-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 149 | 126 | 130 | 180 | 529 | 285 | 576 | 366 | 924 | 412 | 370 | 869 | 532",
+      "url": "https://www.screener.in/company/DIXON/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      113,
+      97,
+      97,
+      140,
+      412,
+      216,
+      465,
+      280,
+      746,
+      321,
+      298,
+      718,
+      411
+    ],
+    "current": 411,
+    "prev": 718,
+    "year": 746,
+    "qoq": -42.757660167130915,
+    "yoy": -44.90616621983914,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "DIXON-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 113 | 97 | 97 | 140 | 412 | 216 | 465 | 280 | 746 | 321 | 298 | 718 | 411",
+      "url": "https://www.screener.in/company/DIXON/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      18.02,
+      16.12,
+      15.91,
+      22.34,
+      65.15,
+      28.5,
+      66.54,
+      37.2,
+      110.72,
+      47.34,
+      42.17,
+      108.6,
+      56.18
+    ],
+    "current": 56.18,
+    "prev": 108.6,
+    "year": 110.72,
+    "qoq": -48.268876611418044,
+    "yoy": -49.259393063583815,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "DIXON-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 18.02 | 16.12 | 15.91 | 22.34 | 65.15 | 28.50 | 66.54 | 37.20 | 110.72 | 47.34 | 42.17 | 108.60 | 56.18",
+      "url": "https://www.screener.in/company/DIXON/consolidated/"
+    }
+  }
+]

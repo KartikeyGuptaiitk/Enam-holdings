@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      15623,
+      15567,
+      15210,
+      15707,
+      15926,
+      15556,
+      15190,
+      15757,
+      15919,
+      16441,
+      16351,
+      17341,
+      18226
+    ],
+    "current": 18226,
+    "prev": 17341,
+    "year": 15919,
+    "qoq": 5.103511908194452,
+    "yoy": 14.492116338966015,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "HINDUNILVR-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 15,623 | 15,567 | 15,210 | 15,707 | 15,926 | 15,556 | 15,190 | 15,757 | 15,919 | 16,441 | 16,351 | 17,341 | 18,226",
+      "url": "https://www.screener.in/company/HINDUNILVR/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      3795,
+      3665,
+      3535,
+      3742,
+      3787,
+      3689,
+      3618,
+      3639,
+      3782,
+      3781,
+      3837,
+      3947,
+      4089
+    ],
+    "current": 4089,
+    "prev": 3947,
+    "year": 3782,
+    "qoq": 3.59766911578414,
+    "yoy": 8.117398202009518,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "HINDUNILVR-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 3,588 | 3,445 | 3,419 | 3,529 | 3,542 | 3,995 | 3,372 | 3,294 | 3,605 | 7,404 | 3,916 | 3,632 | 3,814\nInterest | 88 | 91 | 105 | 93 | 110 | 109 | 77 | 122 | 124 | 88 | 76 | 75 | 74\nDepreciation | 297 | 313 | 320 | 329 | 338 | 318 | 318 | 326 | 322 | 337 | 348 | 353 | 363\nOther Income + | 178 | 184 | 309 | 209 | 203 | 733 | 149 | 103 | 269 | 4,048 | 503 | 113 | 162",
+      "url": "https://www.screener.in/company/HINDUNILVR/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      3588,
+      3445,
+      3419,
+      3529,
+      3542,
+      3995,
+      3372,
+      3294,
+      3605,
+      7404,
+      3916,
+      3632,
+      3814
+    ],
+    "current": 3814,
+    "prev": 3632,
+    "year": 3605,
+    "qoq": 5.011013215859031,
+    "yoy": 5.79750346740638,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "HINDUNILVR-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 3,588 | 3,445 | 3,419 | 3,529 | 3,542 | 3,995 | 3,372 | 3,294 | 3,605 | 7,404 | 3,916 | 3,632 | 3,814",
+      "url": "https://www.screener.in/company/HINDUNILVR/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      2657,
+      2508,
+      2561,
+      2612,
+      2595,
+      2989,
+      2475,
+      2768,
+      2694,
+      6603,
+      2994,
+      2680,
+      2796
+    ],
+    "current": 2796,
+    "prev": 2680,
+    "year": 2694,
+    "qoq": 4.328358208955224,
+    "yoy": 3.78619153674833,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "HINDUNILVR-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 2,657 | 2,508 | 2,561 | 2,612 | 2,595 | 2,989 | 2,475 | 2,768 | 2,694 | 6,603 | 2,994 | 2,680 | 2,796",
+      "url": "https://www.screener.in/company/HINDUNILVR/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      11.3,
+      10.68,
+      10.89,
+      11.11,
+      11.03,
+      12.7,
+      10.49,
+      11.73,
+      11.43,
+      28.12,
+      12.73,
+      11.38,
+      11.87
+    ],
+    "current": 11.87,
+    "prev": 11.38,
+    "year": 11.43,
+    "qoq": 4.305799648506137,
+    "yoy": 3.849518810148727,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "HINDUNILVR-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 11.30 | 10.68 | 10.89 | 11.11 | 11.03 | 12.70 | 10.49 | 11.73 | 11.43 | 28.12 | 12.73 | 11.38 | 11.87",
+      "url": "https://www.screener.in/company/HINDUNILVR/consolidated/"
+    }
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      2412,
+      2498,
+      2591,
+      2737,
+      2897,
+      3062,
+      3242,
+      3334,
+      3581,
+      3778,
+      4056,
+      4303,
+      4664
+    ],
+    "current": 4664,
+    "prev": 4303,
+    "year": 3581,
+    "qoq": 8.38949570067395,
+    "yoy": 30.242948896956158,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "PERSISTENT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 2,412 | 2,498 | 2,591 | 2,737 | 2,897 | 3,062 | 3,242 | 3,334 | 3,581 | 3,778 | 4,056 | 4,303 | 4,664",
+      "url": "https://www.screener.in/company/PERSISTENT/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      405,
+      442,
+      454,
+      455,
+      480,
+      537,
+      584,
+      611,
+      683,
+      734,
+      769,
+      696,
+      635
+    ],
+    "current": 635,
+    "prev": 696,
+    "year": 683,
+    "qoq": -8.764367816091955,
+    "yoy": -7.027818448023426,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "PERSISTENT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 356 | 389 | 395 | 401 | 435 | 482 | 505 | 555 | 617 | 565 | 674 | 623 | 454\nInterest | 12 | 12 | 10 | 14 | 18 | 16 | 18 | 17 | 18 | 19 | 19 | 29 | 38\nDepreciation | 74 | 79 | 80 | 71 | 74 | 82 | 79 | 94 | 100 | 101 | 109 | 115 | 167\nOther Income + | 37 | 38 | 31 | 31 | 47 | 43 | 18 | 55 | 52 | -49 | 33 | 71 | 24",
+      "url": "https://www.screener.in/company/PERSISTENT/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      356,
+      389,
+      395,
+      401,
+      435,
+      482,
+      505,
+      555,
+      617,
+      565,
+      674,
+      623,
+      454
+    ],
+    "current": 454,
+    "prev": 623,
+    "year": 617,
+    "qoq": -27.12680577849117,
+    "yoy": -26.418152350081037,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "PERSISTENT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 356 | 389 | 395 | 401 | 435 | 482 | 505 | 555 | 617 | 565 | 674 | 623 | 454",
+      "url": "https://www.screener.in/company/PERSISTENT/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      263,
+      286,
+      315,
+      306,
+      325,
+      373,
+      396,
+      425,
+      471,
+      439,
+      529,
+      483,
+      352
+    ],
+    "current": 352,
+    "prev": 483,
+    "year": 471,
+    "qoq": -27.12215320910973,
+    "yoy": -25.265392781316347,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "PERSISTENT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 263 | 286 | 315 | 306 | 325 | 373 | 396 | 425 | 471 | 439 | 529 | 483 | 352",
+      "url": "https://www.screener.in/company/PERSISTENT/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      17.11,
+      18.59,
+      20.47,
+      19.89,
+      21.02,
+      24.12,
+      25.59,
+      27.17,
+      30.15,
+      27.86,
+      33.55,
+      30.62,
+      22.28
+    ],
+    "current": 22.28,
+    "prev": 30.62,
+    "year": 30.15,
+    "qoq": -27.23709993468321,
+    "yoy": -26.10281923714759,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "PERSISTENT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 17.11 | 18.59 | 20.47 | 19.89 | 21.02 | 24.12 | 25.59 | 27.17 | 30.15 | 27.86 | 33.55 | 30.62 | 22.28",
+      "url": "https://www.screener.in/company/PERSISTENT/consolidated/"
+    }
+  }
+]

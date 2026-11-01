@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      17164,
+      17774,
+      17195,
+      17038,
+      17778,
+      19990,
+      18790,
+      18765,
+      21495,
+      19502,
+      20047,
+      17825,
+      19114
+    ],
+    "current": 19114,
+    "prev": 17825,
+    "year": 21495,
+    "qoq": 7.231416549789621,
+    "yoy": -11.076994649918586,
+    "period": "Jun 2026",
+    "source": {
+      "doc_id": "ITC-screener",
+      "period": "Jun 2023 · Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026",
+      "page": 0,
+      "text": "Sales + | 17,164 | 17,774 | 17,195 | 17,038 | 17,778 | 19,990 | 18,790 | 18,765 | 21,495 | 19,502 | 20,047 | 17,825 | 19,114",
+      "url": "https://www.screener.in/company/ITC/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      6670,
+      6454,
+      6211,
+      6302,
+      6545,
+      6552,
+      6363,
+      6520,
+      6816,
+      6695,
+      6882,
+      6924,
+      5181
+    ],
+    "current": 5181,
+    "prev": 6924,
+    "year": 6816,
+    "qoq": -25.17331022530329,
+    "yoy": -23.987676056338028,
+    "period": "Jun 2026",
+    "source": {
+      "doc_id": "ITC-screener",
+      "period": "Jun 2023 · Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 6,940 | 6,665 | 6,635 | 6,774 | 6,903 | 6,811 | 6,740 | 21,489 | 7,128 | 6,979 | 6,754 | 7,173 | 5,861\nInterest | 10 | 10 | 12 | 11 | 10 | 15 | 10 | 11 | 16 | 20 | 19 | 29 | 40\nDepreciation | 442 | 453 | 384 | 385 | 403 | 416 | 416 | 411 | 423 | 435 | 431 | 422 | 428\nOther Income + | 722 | 674 | 820 | 868 | 771 | 690 | 803 | 15,391 | 751 | 739 | 322 | 700 | 1,148",
+      "url": "https://www.screener.in/company/ITC/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      6940,
+      6665,
+      6635,
+      6774,
+      6903,
+      6811,
+      6740,
+      21489,
+      7128,
+      6979,
+      6754,
+      7173,
+      5861
+    ],
+    "current": 5861,
+    "prev": 7173,
+    "year": 7128,
+    "qoq": -18.290812770110136,
+    "yoy": -17.774971941638608,
+    "period": "Jun 2026",
+    "source": {
+      "doc_id": "ITC-screener",
+      "period": "Jun 2023 · Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026",
+      "page": 0,
+      "text": "Profit before tax | 6,940 | 6,665 | 6,635 | 6,774 | 6,903 | 6,811 | 6,740 | 21,489 | 7,128 | 6,979 | 6,754 | 7,173 | 5,861",
+      "url": "https://www.screener.in/company/ITC/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      5190,
+      4965,
+      5407,
+      5191,
+      5177,
+      5054,
+      5013,
+      19808,
+      5343,
+      5187,
+      5018,
+      5470,
+      4509
+    ],
+    "current": 4509,
+    "prev": 5470,
+    "year": 5343,
+    "qoq": -17.56855575868373,
+    "yoy": -15.609208309938236,
+    "period": "Jun 2026",
+    "source": {
+      "doc_id": "ITC-screener",
+      "period": "Jun 2023 · Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026",
+      "page": 0,
+      "text": "Net Profit + | 5,190 | 4,965 | 5,407 | 5,191 | 5,177 | 5,054 | 5,013 | 19,808 | 5,343 | 5,187 | 5,018 | 5,470 | 4,509",
+      "url": "https://www.screener.in/company/ITC/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      4.1,
+      3.93,
+      4.28,
+      4.1,
+      4.08,
+      3.99,
+      3.94,
+      15.76,
+      4.19,
+      4.09,
+      3.94,
+      4.3,
+      3.51
+    ],
+    "current": 3.51,
+    "prev": 4.3,
+    "year": 4.19,
+    "qoq": -18.372093023255815,
+    "yoy": -16.22911694510741,
+    "period": "Jun 2026",
+    "source": {
+      "doc_id": "ITC-screener",
+      "period": "Jun 2023 · Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026",
+      "page": 0,
+      "text": "EPS in Rs | 4.10 | 3.93 | 4.28 | 4.10 | 4.08 | 3.99 | 3.94 | 15.76 | 4.19 | 4.09 | 3.94 | 4.30 | 3.51",
+      "url": "https://www.screener.in/company/ITC/consolidated/"
+    }
+  }
+]

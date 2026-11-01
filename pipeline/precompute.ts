@@ -1,0 +1,2 @@
+import {snapshot} from '../lib/data';import {narrative,guidance,financialRows,cashRows} from '../lib/research';import fs from 'node:fs';
+for(const [t,r] of Object.entries(snapshot().research)){fs.mkdirSync(`data/analysis/${t}`,{recursive:true});for(const [module,result] of Object.entries({narrative:narrative(r),guidance:guidance(r),snapshot:financialRows(r),cash:cashRows(r)}))fs.writeFileSync(`data/analysis/${t}/${module}.json`,JSON.stringify(result,null,2));}

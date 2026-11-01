@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      2982,
+      3467,
+      3298,
+      4104,
+      4157,
+      4657,
+      4217,
+      4883,
+      4818,
+      5345,
+      5028,
+      5755,
+      5873
+    ],
+    "current": 5873,
+    "prev": 5755,
+    "year": 4818,
+    "qoq": 2.050390964378801,
+    "yoy": 21.897052718970528,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "TRENT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 2,982 | 3,467 | 3,298 | 4,104 | 4,157 | 4,657 | 4,217 | 4,883 | 4,818 | 5,345 | 5,028 | 5,755 | 5,873",
+      "url": "https://www.screener.in/company/TRENT/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      456,
+      629,
+      470,
+      613,
+      646,
+      848,
+      652,
+      848,
+      816,
+      1081,
+      912,
+      1119,
+      1057
+    ],
+    "current": 1057,
+    "prev": 1119,
+    "year": 816,
+    "qoq": -5.540661304736371,
+    "yoy": 29.534313725490197,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "TRENT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 314 | 475 | 919 | 501 | 467 | 646 | 416 | 565 | 477 | 676 | 519 | 692 | 619\nInterest | 95 | 99 | 33 | 32 | 33 | 37 | 38 | 40 | 42 | 43 | 44 | 47 | 44\nDepreciation | 152 | 165 | 213 | 181 | 197 | 245 | 272 | 293 | 325 | 367 | 377 | 410 | 420\nOther Income + | 105 | 110 | 695 | 101 | 51 | 80 | 74 | 50 | 28 | 5 | 28 | 30 | 26",
+      "url": "https://www.screener.in/company/TRENT/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      314,
+      475,
+      919,
+      501,
+      467,
+      646,
+      416,
+      565,
+      477,
+      676,
+      519,
+      692,
+      619
+    ],
+    "current": 619,
+    "prev": 692,
+    "year": 477,
+    "qoq": -10.54913294797688,
+    "yoy": 29.769392033542978,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "TRENT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 314 | 475 | 919 | 501 | 467 | 646 | 416 | 565 | 477 | 676 | 519 | 692 | 619",
+      "url": "https://www.screener.in/company/TRENT/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      228,
+      371,
+      712,
+      391,
+      335,
+      497,
+      312,
+      425,
+      373,
+      510,
+      413,
+      518,
+      468
+    ],
+    "current": 468,
+    "prev": 518,
+    "year": 373,
+    "qoq": -9.652509652509652,
+    "yoy": 25.46916890080429,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "TRENT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 228 | 371 | 712 | 391 | 335 | 497 | 312 | 425 | 373 | 510 | 413 | 518 | 468",
+      "url": "https://www.screener.in/company/TRENT/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      4.4,
+      7.02,
+      13.21,
+      7.36,
+      6.35,
+      9.33,
+      5.97,
+      8.06,
+      7.07,
+      9.62,
+      7.51,
+      9.73,
+      8.7
+    ],
+    "current": 8.7,
+    "prev": 9.73,
+    "year": 7.07,
+    "qoq": -10.585817060637217,
+    "yoy": 23.05516265912304,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "TRENT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 4.40 | 7.02 | 13.21 | 7.36 | 6.35 | 9.33 | 5.97 | 8.06 | 7.07 | 9.62 | 7.51 | 9.73 | 8.70",
+      "url": "https://www.screener.in/company/TRENT/consolidated/"
+    }
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "e704adc362b29c",
+    "ticker": "SBIN",
+    "ts_iso": "2026-10-29T18:38:26+05:30",
+    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+    "body": "State Bank Of India has informed the Exchange about Schedule of meet",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/SBIN_29102026183706_BSE_NSE_InvestorMeet_Intimation_05112026.pdf",
+    "source": "NSE",
+    "category": "earnings_call"
+  },
+  {
+    "id": "5fdff8f5aea8c2",
+    "ticker": "SBIN",
+    "ts_iso": "2026-10-26T18:49:11+05:30",
+    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+    "body": "State Bank Of India has informed the Exchange about Schedule of meet",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/SBIN_26102026184858_BSE_NSE_PriorIntimation.pdf",
+    "source": "NSE",
+    "category": "earnings_call"
+  },
+  {
+    "id": "272b5e4851e5ea",
+    "ticker": "SBIN",
+    "ts_iso": "2026-10-21T08:51:09+05:30",
+    "headline": "General Updates",
+    "body": "State Bank Of India has informed the Exchange about General Updates",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/SBIN_21102026084938_BSE_NSE_21102026.pdf",
+    "source": "NSE",
+    "category": "unclassified"
+  },
+  {
+    "id": "475e119c8ec09b",
+    "ticker": "SBIN",
+    "ts_iso": "2026-10-09T15:50:05+05:30",
+    "headline": "Copy of Newspaper Publication",
+    "body": "SBIN: State Bank of India has informed the Exchange about Newspaper Publication of Special window for re-lodgement of transfer and dematerialization of physical securities",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/SBIN_09102026154949_NewsPaper09102026.pdf",
+    "source": "NSE",
+    "category": "unclassified"
+  },
+  {
+    "id": "7d8c81e4ba32af",
+    "ticker": "SBIN",
+    "ts_iso": "2026-10-08T16:27:09+05:30",
+    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+    "body": "State Bank of India has informed the Exchange about Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/SBIN_08102026162654_BSE_NSE_74_5__08102026.pdf",
+    "source": "NSE",
+    "category": "unclassified"
+  }
+]

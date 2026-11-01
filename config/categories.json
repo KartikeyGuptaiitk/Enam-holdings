@@ -1,0 +1,19 @@
+{
+  "results": 90,
+  "M&A": 85,
+  "management_change": 85,
+  "litigation": 75,
+  "fund_raise": 70,
+  "credit_rating": 40,
+  "pledging": 70,
+  "insider_trading": 55,
+  "capex": 55,
+  "dividend": 50,
+  "bonus_split": 45,
+  "earnings_call": 35,
+  "investor_meetings": 20,
+  "press_release": 30,
+  "agm_egm": 15,
+  "postal_ballot": 15,
+  "unclassified": 5
+}

@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      59692,
+      60583,
+      61237,
+      62613,
+      64259,
+      63973,
+      64479,
+      63437,
+      65799,
+      67087,
+      70698,
+      72275,
+      73188
+    ],
+    "current": 73188,
+    "prev": 72275,
+    "year": 65799,
+    "qoq": 1.2632307160152196,
+    "yoy": 11.229653946108604,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "TCS-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 59,692 | 60,583 | 61,237 | 62,613 | 64,259 | 63,973 | 64,479 | 63,437 | 65,799 | 67,087 | 70,698 | 72,275 | 73,188",
+      "url": "https://www.screener.in/company/TCS/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      15746,
+      16388,
+      17164,
+      16662,
+      16731,
+      17034,
+      16980,
+      16875,
+      17978,
+      18269,
+      19276,
+      18556,
+      18815
+    ],
+    "current": 18815,
+    "prev": 18556,
+    "year": 17978,
+    "qoq": 1.3957749514981677,
+    "yoy": 4.655690288129937,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "TCS-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 15,330 | 14,829 | 16,849 | 16,231 | 16,032 | 16,666 | 16,402 | 16,979 | 16,068 | 14,078 | 18,362 | 17,944 | 18,638\nInterest | 159 | 230 | 226 | 173 | 162 | 234 | 227 | 195 | 229 | 538 | 265 | 273 | 252\nDepreciation | 1,263 | 1,233 | 1,246 | 1,220 | 1,266 | 1,377 | 1,379 | 1,361 | 1,413 | 1,380 | 1,406 | 1,239 | 1,262\nOther Income + | 1,006 | -96 | 1,157 | 962 | 729 | 1,243 | 1,028 | 1,660 | -268 | -2,273 | 757 | 900 | 1,337",
+      "url": "https://www.screener.in/company/TCS/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      15330,
+      14829,
+      16849,
+      16231,
+      16032,
+      16666,
+      16402,
+      16979,
+      16068,
+      14078,
+      18362,
+      17944,
+      18638
+    ],
+    "current": 18638,
+    "prev": 17944,
+    "year": 16068,
+    "qoq": 3.8675880517164507,
+    "yoy": 15.994523276076675,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "TCS-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 15,330 | 14,829 | 16,849 | 16,231 | 16,032 | 16,666 | 16,402 | 16,979 | 16,068 | 14,078 | 18,362 | 17,944 | 18,638",
+      "url": "https://www.screener.in/company/TCS/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      11380,
+      11097,
+      12502,
+      12105,
+      11955,
+      12444,
+      12293,
+      12819,
+      12131,
+      10720,
+      13784,
+      13420,
+      13934
+    ],
+    "current": 13934,
+    "prev": 13420,
+    "year": 12131,
+    "qoq": 3.8301043219076005,
+    "yoy": 14.86274833072294,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "TCS-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 11,380 | 11,097 | 12,502 | 12,105 | 11,955 | 12,444 | 12,293 | 12,819 | 12,131 | 10,720 | 13,784 | 13,420 | 13,934",
+      "url": "https://www.screener.in/company/TCS/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      31,
+      30.56,
+      34.37,
+      33.28,
+      32.92,
+      34.22,
+      33.79,
+      35.27,
+      33.37,
+      29.45,
+      37.92,
+      36.9,
+      38.37
+    ],
+    "current": 38.37,
+    "prev": 36.9,
+    "year": 33.37,
+    "qoq": 3.983739837398371,
+    "yoy": 14.98351813005694,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "TCS-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 31.00 | 30.56 | 34.37 | 33.28 | 32.92 | 34.22 | 33.79 | 35.27 | 33.37 | 29.45 | 37.92 | 36.90 | 38.37",
+      "url": "https://www.screener.in/company/TCS/consolidated/"
+    }
+  }
+]

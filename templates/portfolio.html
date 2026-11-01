@@ -1,0 +1,7 @@
+{% macro item(row) %}<article><small>{{row[0]}} · {{row[3]}}</small><strong>{{row[1]}}</strong>{% if row[2].startswith('https://') %} · <a href="{{row[2]}}">Filing</a>{% endif %} · <a href="/?mode=research&amp;symbol={{row[0]|urlencode}}">Research</a></article>{% endmacro %}
+<h2>Portfolio digest</h2>{% if as_of %}<p>Saved briefing · <time>{{as_of}}</time> · <a href="/?live=1">Check live</a></p>{% else %}<p>Live check · results cached for five minutes</p>{% endif %}<small>15 holdings · {{days}} calendar day(s) of filings · Latest daily price move ≥ {{move}}% or volume ≥ {{volume}}×</small>
+{% for row in signals %}{{item(row)}}{% else %}<p>{{"No priority items in the available data." if gaps|length < 30 else "Portfolio sources are currently unavailable."}}</p>{% endfor %}
+<details><summary>Other filings ({{routine|length}})</summary>{% for row in routine %}{{item(row)}}{% endfor %}</details>
+{% if gaps %}<details><summary>Unavailable checks ({{gaps|length}})</summary>{{gaps|join(', ')}}</details>{% endif %}
+<form action="/"><details><summary>Portfolio settings</summary><label>Days <input name="days" type="number" min="1" max="90" value="{{days}}"></label><label>Price move % <input name="move" type="number" min="0.1" max="100" step="any" value="{{move}}"></label><label>Volume multiple <input name="volume" type="number" min="0.1" max="100" step="any" value="{{volume}}"></label><button>Update briefing</button></details></form>
+

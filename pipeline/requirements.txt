@@ -1,0 +1,6 @@
+requests>=2.32,<3
+beautifulsoup4>=4.12,<5
+PyMuPDF>=1.24,<2
+yfinance>=0.2.50,<1
+rank_bm25>=0.2.2,<1
+pydantic>=2.10,<3

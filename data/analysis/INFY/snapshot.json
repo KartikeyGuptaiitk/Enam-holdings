@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      38994,
+      38821,
+      37923,
+      39315,
+      40986,
+      41764,
+      40925,
+      42279,
+      44490,
+      45479,
+      46402,
+      48211,
+      49244
+    ],
+    "current": 49244,
+    "prev": 48211,
+    "year": 44490,
+    "qoq": 2.142664537138827,
+    "yoy": 10.685547314003147,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "INFY-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 38,994 | 38,821 | 37,923 | 39,315 | 40,986 | 41,764 | 40,925 | 42,279 | 44,490 | 45,479 | 46,402 | 48,211 | 49,244",
+      "url": "https://www.screener.in/company/INFY/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      9440,
+      9137,
+      8784,
+      9437,
+      9809,
+      10115,
+      9874,
+      9943,
+      10535,
+      10634,
+      11167,
+      11409,
+      11689
+    ],
+    "current": 11689,
+    "prev": 11409,
+    "year": 10535,
+    "qoq": 2.4542028223332455,
+    "yoy": 10.953962980541053,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "INFY-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 8,768 | 8,619 | 10,240 | 9,021 | 9,253 | 9,670 | 9,663 | 9,740 | 10,229 | 9,229 | 10,797 | 11,028 | 11,063\nInterest | 138 | 131 | 110 | 105 | 108 | 101 | 102 | 105 | 106 | 100 | 105 | 119 | 115\nDepreciation | 1,166 | 1,176 | 1,163 | 1,149 | 1,160 | 1,203 | 1,299 | 1,140 | 1,182 | 1,155 | 1,424 | 1,246 | 1,359\nOther Income + | 632 | 789 | 2,729 | 838 | 712 | 859 | 1,190 | 1,042 | 982 | -150 | 1,159 | 984 | 848",
+      "url": "https://www.screener.in/company/INFY/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      8768,
+      8619,
+      10240,
+      9021,
+      9253,
+      9670,
+      9663,
+      9740,
+      10229,
+      9229,
+      10797,
+      11028,
+      11063
+    ],
+    "current": 11063,
+    "prev": 11028,
+    "year": 10229,
+    "qoq": 0.31737395719985495,
+    "yoy": 8.15328966663408,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "INFY-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 8,768 | 8,619 | 10,240 | 9,021 | 9,253 | 9,670 | 9,663 | 9,740 | 10,229 | 9,229 | 10,797 | 11,028 | 11,063",
+      "url": "https://www.screener.in/company/INFY/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      6215,
+      6113,
+      7975,
+      6374,
+      6516,
+      6822,
+      7038,
+      6924,
+      7375,
+      6666,
+      8509,
+      7775,
+      7838
+    ],
+    "current": 7838,
+    "prev": 7775,
+    "year": 7375,
+    "qoq": 0.8102893890675242,
+    "yoy": 6.277966101694915,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "INFY-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 6,215 | 6,113 | 7,975 | 6,374 | 6,516 | 6,822 | 7,038 | 6,924 | 7,375 | 6,666 | 8,509 | 7,775 | 7,838",
+      "url": "https://www.screener.in/company/INFY/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      14.97,
+      14.71,
+      19.2,
+      15.34,
+      15.67,
+      16.39,
+      16.93,
+      16.66,
+      17.73,
+      16.41,
+      20.96,
+      19.15,
+      19.28
+    ],
+    "current": 19.28,
+    "prev": 19.15,
+    "year": 17.73,
+    "qoq": 0.6788511749347392,
+    "yoy": 8.742244782853923,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "INFY-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 14.97 | 14.71 | 19.20 | 15.34 | 15.67 | 16.39 | 16.93 | 16.66 | 17.73 | 16.41 | 20.96 | 19.15 | 19.28",
+      "url": "https://www.screener.in/company/INFY/consolidated/"
+    }
+  }
+]

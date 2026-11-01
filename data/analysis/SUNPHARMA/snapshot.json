@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      12192,
+      12381,
+      11983,
+      12653,
+      13291,
+      13675,
+      12959,
+      13851,
+      14478,
+      15521,
+      14612,
+      15300,
+      16199
+    ],
+    "current": 16199,
+    "prev": 15300,
+    "year": 14478,
+    "qoq": 5.875816993464053,
+    "yoy": 11.88700096698439,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "SUNPHARMA-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 12,192 | 12,381 | 11,983 | 12,653 | 13,291 | 13,675 | 12,959 | 13,851 | 14,478 | 15,521 | 14,612 | 15,300 | 16,199",
+      "url": "https://www.screener.in/company/SUNPHARMA/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      3179,
+      3477,
+      3036,
+      3608,
+      3939,
+      4010,
+      3716,
+      4303,
+      4528,
+      4948,
+      3954,
+      4418,
+      4744
+    ],
+    "current": 4744,
+    "prev": 4418,
+    "year": 4528,
+    "qoq": 7.378904481665913,
+    "yoy": 4.770318021201414,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "SUNPHARMA-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 2,791 | 3,000 | 2,816 | 3,424 | 3,598 | 3,476 | 3,254 | 3,173 | 4,168 | 4,227 | 3,551 | 4,099 | 3,159\nInterest | 49 | 35 | 74 | 62 | 69 | 52 | 49 | 75 | 100 | 78 | 86 | 100 | 75\nDepreciation | 633 | 622 | 650 | 655 | 626 | 631 | 664 | 701 | 730 | 732 | 775 | 739 | 758\nOther Income + | 294 | 180 | 504 | 533 | 354 | 149 | 251 | -354 | 470 | 89 | 458 | 520 | -752",
+      "url": "https://www.screener.in/company/SUNPHARMA/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      2791,
+      3000,
+      2816,
+      3424,
+      3598,
+      3476,
+      3254,
+      3173,
+      4168,
+      4227,
+      3551,
+      4099,
+      3159
+    ],
+    "current": 3159,
+    "prev": 4099,
+    "year": 4168,
+    "qoq": -22.932422542083437,
+    "yoy": -24.208253358925145,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "SUNPHARMA-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 2,791 | 3,000 | 2,816 | 3,424 | 3,598 | 3,476 | 3,254 | 3,173 | 4,168 | 4,227 | 3,551 | 4,099 | 3,159",
+      "url": "https://www.screener.in/company/SUNPHARMA/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      2385,
+      2561,
+      2659,
+      2861,
+      3037,
+      2913,
+      2154,
+      2293,
+      3125,
+      3381,
+      2710,
+      2901,
+      1995
+    ],
+    "current": 1995,
+    "prev": 2901,
+    "year": 3125,
+    "qoq": -31.230610134436404,
+    "yoy": -36.16,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "SUNPHARMA-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 2,385 | 2,561 | 2,659 | 2,861 | 3,037 | 2,913 | 2,154 | 2,293 | 3,125 | 3,381 | 2,710 | 2,901 | 1,995",
+      "url": "https://www.screener.in/company/SUNPHARMA/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      9.9,
+      10.52,
+      11.06,
+      11.82,
+      12.67,
+      12.1,
+      8.96,
+      9.5,
+      13,
+      14.04,
+      11.31,
+      12.06,
+      8.29
+    ],
+    "current": 8.29,
+    "prev": 12.06,
+    "year": 13,
+    "qoq": -31.2603648424544,
+    "yoy": -36.23076923076924,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "SUNPHARMA-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 9.90 | 10.52 | 11.06 | 11.82 | 12.67 | 12.10 | 8.96 | 9.50 | 13.00 | 14.04 | 11.31 | 12.06 | 8.29",
+      "url": "https://www.screener.in/company/SUNPHARMA/consolidated/"
+    }
+  }
+]

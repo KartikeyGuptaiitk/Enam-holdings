@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      8479,
+      9103,
+      8731,
+      8970,
+      8028,
+      8549,
+      8359,
+      8939,
+      8531,
+      8867,
+      9247,
+      10542,
+      9977
+    ],
+    "current": 9977,
+    "prev": 10542,
+    "year": 8531,
+    "qoq": -5.35951432365775,
+    "yoy": 16.9499472512015,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "ASIANPAINT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 8,479 | 9,103 | 8,731 | 8,970 | 8,028 | 8,549 | 8,359 | 8,939 | 8,531 | 8,867 | 9,247 | 10,542 | 9,977",
+      "url": "https://www.screener.in/company/ASIANPAINT/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      1717,
+      2056,
+      1692,
+      1694,
+      1239,
+      1637,
+      1436,
+      1625,
+      1504,
+      1781,
+      1786,
+      2169,
+      1557
+    ],
+    "current": 1557,
+    "prev": 2169,
+    "year": 1504,
+    "qoq": -28.21576763485477,
+    "yoy": 3.5239361702127656,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "ASIANPAINT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 1,651 | 1,968 | 1,624 | 1,604 | 959 | 1,518 | 1,022 | 1,509 | 1,392 | 1,489 | 1,614 | 2,096 | 1,478\nInterest | 51 | 54 | 54 | 55 | 63 | 56 | 53 | 44 | 44 | 48 | 59 | 48 | 55\nDepreciation | 209 | 220 | 226 | 228 | 242 | 256 | 301 | 301 | 305 | 313 | 310 | 304 | 314\nOther Income + | 194 | 186 | 212 | 193 | 25 | 193 | -60 | 229 | 237 | 69 | 197 | 279 | 290",
+      "url": "https://www.screener.in/company/ASIANPAINT/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      1651,
+      1968,
+      1624,
+      1604,
+      959,
+      1518,
+      1022,
+      1509,
+      1392,
+      1489,
+      1614,
+      2096,
+      1478
+    ],
+    "current": 1478,
+    "prev": 2096,
+    "year": 1392,
+    "qoq": -29.48473282442748,
+    "yoy": 6.17816091954023,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "ASIANPAINT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 1,651 | 1,968 | 1,624 | 1,604 | 959 | 1,518 | 1,022 | 1,509 | 1,392 | 1,489 | 1,614 | 2,096 | 1,478",
+      "url": "https://www.screener.in/company/ASIANPAINT/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      1232,
+      1475,
+      1275,
+      1187,
+      694,
+      1128,
+      701,
+      1117,
+      1018,
+      1074,
+      1185,
+      1559,
+      1085
+    ],
+    "current": 1085,
+    "prev": 1559,
+    "year": 1018,
+    "qoq": -30.40410519563823,
+    "yoy": 6.581532416502947,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "ASIANPAINT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 1,232 | 1,475 | 1,275 | 1,187 | 694 | 1,128 | 701 | 1,117 | 1,018 | 1,074 | 1,185 | 1,559 | 1,085",
+      "url": "https://www.screener.in/company/ASIANPAINT/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      12.57,
+      15.09,
+      13.1,
+      12.2,
+      7.24,
+      11.58,
+      7.22,
+      11.47,
+      10.36,
+      11.05,
+      12.22,
+      16.05,
+      11.13
+    ],
+    "current": 11.13,
+    "prev": 16.05,
+    "year": 10.36,
+    "qoq": -30.65420560747663,
+    "yoy": 7.432432432432446,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "ASIANPAINT-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 12.57 | 15.09 | 13.10 | 12.20 | 7.24 | 11.58 | 7.22 | 11.47 | 10.36 | 11.05 | 12.22 | 16.05 | 11.13",
+      "url": "https://www.screener.in/company/ASIANPAINT/consolidated/"
+    }
+  }
+]

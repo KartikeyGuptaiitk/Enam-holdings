@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      1778,
+      2009,
+      2126,
+      2167,
+      2032,
+      1903,
+      2180,
+      1890,
+      1902,
+      1975,
+      2120,
+      2578,
+      3076
+    ],
+    "current": 3076,
+    "prev": 2578,
+    "year": 1902,
+    "qoq": 19.317300232738557,
+    "yoy": 61.72450052576236,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "DEEPAKNTR-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 1,778 | 2,009 | 2,126 | 2,167 | 2,032 | 1,903 | 2,180 | 1,890 | 1,902 | 1,975 | 2,120 | 2,578 | 3,076",
+      "url": "https://www.screener.in/company/DEEPAKNTR/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      302,
+      305,
+      300,
+      309,
+      297,
+      168,
+      316,
+      189,
+      204,
+      211,
+      376,
+      541,
+      627
+    ],
+    "current": 627,
+    "prev": 541,
+    "year": 204,
+    "qoq": 15.89648798521257,
+    "yoy": 207.3529411764706,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "DEEPAKNTR-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 277 | 274 | 349 | 275 | 264 | 135 | 279 | 155 | 163 | 138 | 301 | 468 | 543\nInterest | 3 | 3 | 4 | 6 | 6 | 6 | 9 | 8 | 8 | 11 | 19 | 23 | 29\nDepreciation | 39 | 42 | 46 | 47 | 48 | 48 | 51 | 51 | 53 | 58 | 63 | 64 | 71\nOther Income + | 17 | 14 | 99 | 19 | 21 | 21 | 23 | 25 | 20 | -4 | 7 | 14 | 16",
+      "url": "https://www.screener.in/company/DEEPAKNTR/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      277,
+      274,
+      349,
+      275,
+      264,
+      135,
+      279,
+      155,
+      163,
+      138,
+      301,
+      468,
+      543
+    ],
+    "current": 543,
+    "prev": 468,
+    "year": 163,
+    "qoq": 16.025641025641026,
+    "yoy": 233.12883435582822,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "DEEPAKNTR-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 277 | 274 | 349 | 275 | 264 | 135 | 279 | 155 | 163 | 138 | 301 | 468 | 543",
+      "url": "https://www.screener.in/company/DEEPAKNTR/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      205,
+      202,
+      254,
+      203,
+      194,
+      98,
+      202,
+      112,
+      119,
+      100,
+      220,
+      345,
+      398
+    ],
+    "current": 398,
+    "prev": 345,
+    "year": 119,
+    "qoq": 15.36231884057971,
+    "yoy": 234.45378151260505,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "DEEPAKNTR-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 205 | 202 | 254 | 203 | 194 | 98 | 202 | 112 | 119 | 100 | 220 | 345 | 398",
+      "url": "https://www.screener.in/company/DEEPAKNTR/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      15.04,
+      14.81,
+      18.61,
+      14.85,
+      14.24,
+      7.19,
+      14.84,
+      8.23,
+      8.7,
+      7.32,
+      16.11,
+      25.3,
+      29.16
+    ],
+    "current": 29.16,
+    "prev": 25.3,
+    "year": 8.7,
+    "qoq": 15.256916996047428,
+    "yoy": 235.1724137931035,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "DEEPAKNTR-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 15.04 | 14.81 | 18.61 | 14.85 | 14.24 | 7.19 | 14.84 | 8.23 | 8.70 | 7.32 | 16.11 | 25.30 | 29.16",
+      "url": "https://www.screener.in/company/DEEPAKNTR/consolidated/"
+    }
+  }
+]

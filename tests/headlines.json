@@ -1,0 +1,242 @@
+[
+  {
+    "text": "Analysts/Institutional Investor Meet/Con. Call Updates \u00b7 Asian Paints Limited has informed the Exchange about Link of Recording",
+    "expected": "earnings_call",
+    "source": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026211830_SE_intimation__Audio_Recording_Q2FY26-27signed.pdf",
+    "ticker": "ASIANPAINT"
+  },
+  {
+    "text": "Investor Presentation \u00b7 Asian Paints Limited has informed the Exchange about Investor Presentation",
+    "expected": "results",
+    "source": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026164544_SEIntimation_Investor_Presentation_Q2FY26-27pdfsigned.pdf",
+    "ticker": "ASIANPAINT"
+  },
+  {
+    "text": "Press Release \u00b7 Please find enclosed the Press Release on the performance of the Company for the quarter and half year ended 30th September 2026.",
+    "expected": "press_release",
+    "source": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026141409_OutcomeofBM29102026signed.pdf",
+    "ticker": "ASIANPAINT"
+  },
+  {
+    "text": "Updates \u00b7 The Board of Directors at their meeting held today i.e., 29th October 2026, has, inter alia, approved the payment of interim dividend of Rs. 5.75 (Rupees five and paise seventy-five only) per equity share of the face value of Re. 1 each for the financial year ending 31st March 2027",
+    "expected": "dividend",
+    "source": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026141215_OutcomeofBM29102026signed.pdf",
+    "ticker": "ASIANPAINT"
+  },
+  {
+    "text": "Outcome of Board Meeting \u00b7 The Board of Directors at its meeting held today i.e., 29th October 2026, has, inter alia, approved the audited standalone and unaudited consolidated financial results of the Company for the quarter and half year ended 30th September 2026 and payment of interim dividend of Rs. 5.75 (Rupees five and paise seventy-five only) per equity share of the face value of Re. 1 each for the financial year ending 31st March 2027",
+    "expected": "results",
+    "source": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026140936_OutcomeofBM29102026signed.pdf",
+    "ticker": "ASIANPAINT"
+  },
+  {
+    "text": "Dividend \u00b7 The Board of Directors at its meeting held today i.e., 29th October 2026, has, inter alia, approved the audited standalone and unaudited consolidated financial results of the Company for the quarter and half year ended 30th September 2026 and payment of interim dividend of Rs. 5.75 (Rupees five and paise seventy-five only) per equity share of the face value of Re. 1 each for the financial year ending 31st March 2027.",
+    "expected": "dividend",
+    "source": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026140642_OutcomeofBM29102026signed.pdf",
+    "ticker": "ASIANPAINT"
+  },
+  {
+    "text": "Outcome of Board Meeting \u00b7 Asian Paints Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+    "expected": "results",
+    "source": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_29102026140213_OutcomeofBM29102026signed.pdf",
+    "ticker": "ASIANPAINT"
+  },
+  {
+    "text": "Certificate under SEBI (Depositories and Participants) Regulations, 2018 \u00b7 Please find enclosed herewith the Certificate received from MUFG Intime India Private Limited (formerly Link Intime India Private Limited), Company s Registrar and Share Transfer Agent for the quarter ended 30th September 2026 certifying compliance with Regulation 74(5) of the SEBI (Depositories and Participants) Regulations, 2018.",
+    "expected": "unclassified",
+    "source": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_15102026225755_Regulation74DPRegulations30092026signed.pdf",
+    "ticker": "ASIANPAINT"
+  },
+  {
+    "text": "Copy of Newspaper Publication \u00b7 Please find enclosed newspaper advertisement published on 8th October 2026 informing about the resolution proposed to be passed through Postal Ballot and details relating to e-Voting facility.",
+    "expected": "unclassified",
+    "source": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_08102026151258_SE_Intimation_Newspaper_Advertisement_signed.pdf",
+    "ticker": "ASIANPAINT"
+  },
+  {
+    "text": "Shareholders meeting \u00b7 Please find enclosed the Postal Ballot Notice dated 7th September 2026 together with the Explanatory Statement being sent to the members of the Company seeking their approval for appointment of Mr. Leo Puri as an Independent Director of the Company for a term of five consecutive years commencing from 7th September 2026 to 6th September 2031.",
+    "expected": "postal_ballot",
+    "source": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_07102026204250_SE_Intimation_-_Postal_ballot_Notice.pdf",
+    "ticker": "ASIANPAINT"
+  },
+  {
+    "text": "Analysts/Institutional Investor Meet/Con. Call Updates \u00b7 The Company will hold a conference with investors on 29th October 2026 at 5 p.m. IST.on the business and financial performance of the Company for the quarter and half year ended 30th September 2026.",
+    "expected": "earnings_call",
+    "source": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_06102026201150_Investor_conference_Q22026-27.pdf",
+    "ticker": "ASIANPAINT"
+  },
+  {
+    "text": "Record Date \u00b7 Asian Paints Limited has informed the Exchange that Record date for the purpose of Dividend  is 04-Nov-2026.",
+    "expected": "dividend",
+    "source": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_06102026191216_BMintimationtoStockExchangesOct26.pdf",
+    "ticker": "ASIANPAINT"
+  },
+  {
+    "text": "Updates \u00b7 Asian Paints Limited has informed the Exchange regarding 'This is to inform you that a meeting of the Board of Directors of the Company will be held on Thursday, 29th October 2026, inter alia, to consider the declaration of interim dividend, if any, for the financial year ending 31st March 2027.  It is further informed that the record date for payment of interim dividend, if declared, will be Wednesday, 4th November 2026.'.",
+    "expected": "dividend",
+    "source": "https://nsearchives.nseindia.com/corporate/ASIANPAINT_06102026190837_BMintimationtoStockExchangesOct26.pdf",
+    "ticker": "ASIANPAINT"
+  },
+  {
+    "text": "Allotment of Securities \u00b7 Bajaj Finance Limited has informed the Exchange regarding allotment of 2,06,950 securities pursuant to Non Convertible Securities at its meeting held on October 30, 2026",
+    "expected": "fund_raise",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_30102026145301_REG30_Allotment_intimation.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Analysts/Institutional Investor Meet/Con. Call Updates \u00b7 Bajaj Finance Limited has informed the Exchange about Schedule of meet",
+    "expected": "investor_meetings",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_26102026192457_BSENSE_Intimation_Investor_meet.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Analysts/Institutional Investor Meet/Con. Call Updates \u00b7 Bajaj Finance Limited has informed the Exchange about Transcript",
+    "expected": "earnings_call",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_23102026145254_BFL_Investor_Call_outcome_Transcript_for_filing.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Allotment of Securities \u00b7 Bajaj Finance Limited has informed the Exchange regarding allotment of 2,12,000 securities pursuant to Non Convertible Securities at its meeting held on October 21, 2026",
+    "expected": "fund_raise",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_21102026122914_REG30_Allotment_intimation.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Analysts/Institutional Investor Meet/Con. Call Updates \u00b7 Bajaj Finance Limited has informed the Exchange about Link of Recording",
+    "expected": "earnings_call",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_19102026205822_Outcome_of_investor_call_-_Q2FY27.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Change in Management \u00b7 Bajaj Finance Limited has informed the Exchange about change in Management",
+    "expected": "management_change",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_19102026175648_Change_in_SMT_Prashant_Verma_CISO_signed.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Issue of Securities \u00b7 Bajaj Finance Limited has informed the Exchange about issue of Securities",
+    "expected": "fund_raise",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_19102026175355_Issue_of_Securities_19102026.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Investor Presentation \u00b7 Bajaj Finance Limited has informed the Exchange about Investor Presentation",
+    "expected": "results",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_19102026172612_SEIntimation_InvestorPPT_19102026.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Outcome of Board Meeting \u00b7 Bajaj Finance Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+    "expected": "results",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_19102026172017_BMOutcome_19102026.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Analysts/Institutional Investor Meet/Con. Call Updates \u00b7 Bajaj Finance Limited has informed the Exchange about Schedule of meet",
+    "expected": "investor_meetings",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_16102026160340_SE_Analyst_Meet.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Analysts/Institutional Investor Meet/Con. Call Updates \u00b7 Bajaj Finance Limited has informed the Exchange about Schedule of meet",
+    "expected": "investor_meetings",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_16102026160355_SE_Analyst_Meet.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Analysts/Institutional Investor Meet/Con. Call Updates \u00b7 Bajaj Finance Limited has informed the Exchange about Schedule of Investor Meet",
+    "expected": "investor_meetings",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_13102026115736_BSENSE_Intimation_Investor_meet_13102026.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Copy of Newspaper Publication \u00b7 Bajaj Finance Limited has informed the Exchange about Copy of Newspaper Publication",
+    "expected": "unclassified",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_10102026171855_SEIntimationnewspaperadvt_Sd.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Shareholders meeting \u00b7 Bajaj Finance Limited has informed the Exchange regarding Notice of Extraordinary General Meeting to be held on November 02, 2026",
+    "expected": "agm_egm",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_09102026224649_SEIntimationEGMNotice.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Allotment of Securities \u00b7 Bajaj Finance Limited has informed the Exchange regarding allotment of 51000 securities pursuant to Non Convertible Securities at its meeting held on October 09, 2026",
+    "expected": "fund_raise",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_09102026121406_REG30_Allotment_intimation_T7.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Certificate under SEBI (Depositories and Participants) Regulations, 2018 \u00b7 Bajaj Finance Limited has informed the Exchange about Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+    "expected": "unclassified",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_07102026185211_74_5__sd.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "General Updates \u00b7 Bajaj Finance Limited has informed the Exchange about information under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulation, 2015 r/w Schedule A of Regulation 8 of SEBI (Prohibition of Insider Trading) Regulations, 2015",
+    "expected": "unclassified",
+    "source": "https://nsearchives.nseindia.com/corporate/BAJFINANCE_03102026110139_BFL_Pre-results_earning_intimation_Q2FY2027.pdf",
+    "ticker": "BAJFINANCE"
+  },
+  {
+    "text": "Analysts/Institutional Investor Meet/Con. Call Updates \u00b7 CDSL has informed the Exchange about Presentation for the quarter and half year ended September 30, 2026.",
+    "expected": "results",
+    "source": "https://nsearchives.nseindia.com/corporate/CDSL_31102026155542_CDSL_InvestorPresentation_Signed.pdf",
+    "ticker": "CDSL"
+  },
+  {
+    "text": "Press Release \u00b7 CDSL has informed the Exchange regarding Media Release relating to financial results for the quarter and half year ended September 30, 2026.",
+    "expected": "results",
+    "source": "https://nsearchives.nseindia.com/corporate/CDSL_31102026142410_Press_release_Signed.pdf",
+    "ticker": "CDSL"
+  },
+  {
+    "text": "Outcome of Board Meeting \u00b7 CDSL has submitted to the Exchange, the financial results for the quarter and half year ended September 30, 2026.",
+    "expected": "results",
+    "source": "https://nsearchives.nseindia.com/corporate/CDSL_31102026141138_OutcomeBM31102026_Signed.pdf",
+    "ticker": "CDSL"
+  },
+  {
+    "text": "General Updates \u00b7 CDSL has informed the Exchange about Disclosure under Regulation 30 of Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015 (SEBI Listing Regulations).",
+    "expected": "unclassified",
+    "source": "https://nsearchives.nseindia.com/corporate/CDSL_30102026191314_IntimationofPenalty30102026_sd.pdf",
+    "ticker": "CDSL"
+  },
+  {
+    "text": "Retirement \u00b7 CDSL has informed the Exchange about Retirement of Shri Ashish Bhatt, Senior Vice President, Operations.",
+    "expected": "management_change",
+    "source": "https://nsearchives.nseindia.com/corporate/CDSL_28102026180148_Retirement_Ashish_Bhatt_Signed.pdf",
+    "ticker": "CDSL"
+  },
+  {
+    "text": "Analysts/Institutional Investor Meet/Con. Call Updates \u00b7 CDSL has informed the Exchange about Schedule of Conference Call to be held on Monday, November 02, 2026.",
+    "expected": "earnings_call",
+    "source": "https://nsearchives.nseindia.com/corporate/CDSL_27102026172744_NSEIntimation_Concall_02112026_Signed.pdf",
+    "ticker": "CDSL"
+  },
+  {
+    "text": "Copy of Newspaper Publication \u00b7 Dixon Technologies (India) Limited has informed the Exchange about copy of newspaper publication of Unaudited Financial Results (standalone & consolidated) of the Company for the quarter and half year ended 30th September, 2026",
+    "expected": "unclassified",
+    "source": "https://nsearchives.nseindia.com/corporate/DIXON_31102026192630_NewspaperAdvertisement31101026.pdf",
+    "ticker": "DIXON"
+  },
+  {
+    "text": "Analysts/Institutional Investor Meet/Con. Call Updates \u00b7 Dixon Technologies (India) Limited has informed the Exchange about Link of Recording",
+    "expected": "earnings_call",
+    "source": "https://nsearchives.nseindia.com/corporate/DIXON_30102026203021_ConferenceCallRecordingIntimation30102026.pdf",
+    "ticker": "DIXON"
+  },
+  {
+    "text": "Investor Presentation \u00b7 Dixon Technologies (India) Limited has informed the Exchange about Investor Presentation",
+    "expected": "results",
+    "source": "https://nsearchives.nseindia.com/corporate/DIXON_30102026161836_OutcomewithPPT30102026.pdf",
+    "ticker": "DIXON"
+  },
+  {
+    "text": "Change in Management \u00b7 Dixon Technologies (India) Limited has informed the Exchange about change in Management",
+    "expected": "management_change",
+    "source": "https://nsearchives.nseindia.com/corporate/DIXON_30102026160939_Outcome30102026.pdf",
+    "ticker": "DIXON"
+  }
+]

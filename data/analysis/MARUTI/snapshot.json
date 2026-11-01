@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      37339,
+      33513,
+      38471,
+      35779,
+      37449,
+      38764,
+      40920,
+      38605,
+      42344,
+      49904,
+      52462,
+      52470,
+      53356
+    ],
+    "current": 53356,
+    "prev": 52470,
+    "year": 42344,
+    "qoq": 1.6885839527348963,
+    "yoy": 26.00604572076327,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "MARUTI-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 37,339 | 33,513 | 38,471 | 35,779 | 37,449 | 38,764 | 40,920 | 38,605 | 42,344 | 49,904 | 52,462 | 52,470 | 53,356",
+      "url": "https://www.screener.in/company/MARUTI/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      5311,
+      4441,
+      5221,
+      5107,
+      5000,
+      5076,
+      4845,
+      4623,
+      5085,
+      5574,
+      6158,
+      4313,
+      4764
+    ],
+    "current": 4764,
+    "prev": 4313,
+    "year": 5085,
+    "qoq": 10.456758636679805,
+    "yoy": -6.312684365781711,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "MARUTI-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 4,892 | 4,156 | 5,108 | 4,836 | 5,141 | 4,726 | 4,918 | 4,944 | 4,339 | 4,917 | 4,918 | 4,441 | 3,219\nInterest | 35 | 36 | 76 | 57 | 43 | 46 | 48 | 47 | 57 | 62 | 73 | 64 | 68\nDepreciation | 1,342 | 1,302 | 1,298 | 1,332 | 1,386 | 1,429 | 1,462 | 1,556 | 1,703 | 1,735 | 1,748 | 1,780 | 1,960\nOther Income + | 958 | 1,053 | 1,261 | 1,118 | 1,570 | 1,125 | 1,583 | 1,924 | 1,014 | 1,140 | 581 | 1,972 | 483",
+      "url": "https://www.screener.in/company/MARUTI/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      4892,
+      4156,
+      5108,
+      4836,
+      5141,
+      4726,
+      4918,
+      4944,
+      4339,
+      4917,
+      4918,
+      4441,
+      3219
+    ],
+    "current": 3219,
+    "prev": 4441,
+    "year": 4339,
+    "qoq": -27.516325151992792,
+    "yoy": -25.812399170315743,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "MARUTI-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 4,892 | 4,156 | 5,108 | 4,836 | 5,141 | 4,726 | 4,918 | 4,944 | 4,339 | 4,917 | 4,918 | 4,441 | 3,219",
+      "url": "https://www.screener.in/company/MARUTI/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      3786,
+      3207,
+      3952,
+      3760,
+      3102,
+      3727,
+      3911,
+      3792,
+      3349,
+      3879,
+      3659,
+      3447,
+      2466
+    ],
+    "current": 2466,
+    "prev": 3447,
+    "year": 3349,
+    "qoq": -28.459530026109658,
+    "yoy": -26.366079426694533,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "MARUTI-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 3,786 | 3,207 | 3,952 | 3,760 | 3,102 | 3,727 | 3,911 | 3,792 | 3,349 | 3,879 | 3,659 | 3,447 | 2,466",
+      "url": "https://www.screener.in/company/MARUTI/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      125.34,
+      102,
+      125.71,
+      119.58,
+      98.68,
+      118.54,
+      124.4,
+      120.62,
+      106.52,
+      123.38,
+      116.38,
+      109.63,
+      78.44
+    ],
+    "current": 78.44,
+    "prev": 109.63,
+    "year": 106.52,
+    "qoq": -28.450241722156346,
+    "yoy": -26.361246714232067,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "MARUTI-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 125.34 | 102.00 | 125.71 | 119.58 | 98.68 | 118.54 | 124.40 | 120.62 | 106.52 | 123.38 | 116.38 | 109.63 | 78.44",
+      "url": "https://www.screener.in/company/MARUTI/consolidated/"
+    }
+  }
+]

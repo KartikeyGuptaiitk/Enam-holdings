@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Profit before tax",
+    "values": [
+      4758,
+      4896,
+      5105,
+      5265,
+      5401,
+      5765,
+      5647,
+      6368,
+      6608,
+      5431,
+      7410,
+      8149,
+      8537
+    ],
+    "current": 8537,
+    "prev": 8149,
+    "year": 6608,
+    "qoq": 4.761320407411953,
+    "yoy": 29.191888619854723,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "BAJFINANCE-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 4,758 | 4,896 | 5,105 | 5,265 | 5,401 | 5,765 | 5,647 | 6,368 | 6,608 | 5,431 | 7,410 | 8,149 | 8,537",
+      "url": "https://www.screener.in/company/BAJFINANCE/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      3551,
+      3639,
+      3825,
+      3912,
+      4014,
+      4308,
+      4546,
+      4765,
+      4948,
+      4066,
+      5553,
+      6081,
+      6367
+    ],
+    "current": 6367,
+    "prev": 6081,
+    "year": 4948,
+    "qoq": 4.703173820095379,
+    "yoy": 28.678253839935326,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "BAJFINANCE-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 3,551 | 3,639 | 3,825 | 3,912 | 4,014 | 4,308 | 4,546 | 4,765 | 4,948 | 4,066 | 5,553 | 6,081 | 6,367",
+      "url": "https://www.screener.in/company/BAJFINANCE/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      5.86,
+      5.89,
+      6.18,
+      6.32,
+      6.46,
+      6.86,
+      7.21,
+      7.56,
+      7.84,
+      6.39,
+      8.78,
+      9.61,
+      10.06
+    ],
+    "current": 10.06,
+    "prev": 9.61,
+    "year": 7.84,
+    "qoq": 4.682622268470355,
+    "yoy": 28.31632653061225,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "BAJFINANCE-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 5.86 | 5.89 | 6.18 | 6.32 | 6.46 | 6.86 | 7.21 | 7.56 | 7.84 | 6.39 | 8.78 | 9.61 | 10.06",
+      "url": "https://www.screener.in/company/BAJFINANCE/consolidated/"
+    }
+  }
+]

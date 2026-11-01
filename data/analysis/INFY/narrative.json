@@ -1,0 +1,250 @@
+[
+  {
+    "statement": "The new revenue growth guidance for this financial year is 3% to 3.5% growth in constant currency.",
+    "metric": "Revenue growth (CC)",
+    "target": "3–3.5%",
+    "delivered": "3.1%",
+    "verdict": "met",
+    "sources": [
+      {
+        "doc_id": "INFY-5",
+        "page": 4,
+        "text": "The new revenue growth guidance for this financial year is 3% to 3.5% growth in constant currency.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=373b3501-e2a7-4ba4-bdd1-83f6bc21c25c.pdf",
+        "period": "Jan 2026 Transcript AI Summary PPT"
+      },
+      {
+        "doc_id": "INFY-3",
+        "page": 4,
+        "text": "We had growth of 3.1% for the full year in constant currency terms.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+        "period": "Apr 2026 Transcript AI Summary PPT REC"
+      }
+    ]
+  },
+  {
+    "statement": "Our operating margin guidance for the financial year remains the same at 20% to 22%.",
+    "metric": "Operating margin",
+    "target": "20–22%",
+    "delivered": "21%",
+    "verdict": "met",
+    "sources": [
+      {
+        "doc_id": "INFY-5",
+        "page": 4,
+        "text": "Our operating margin guidance for the financial year remains the same at 20% to 22%.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=373b3501-e2a7-4ba4-bdd1-83f6bc21c25c.pdf",
+        "period": "Jan 2026 Transcript AI Summary PPT"
+      },
+      {
+        "doc_id": "INFY-3",
+        "page": 7,
+        "text": "Jayesh Sanghrajka So if you look at the margins, the full year margins is at 21%.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+        "period": "Apr 2026 Transcript AI Summary PPT REC"
+      }
+    ]
+  },
+  {
+    "statement": "The new guidance is growth between 2% and 3% in constant currency terms for the full year.",
+    "metric": "Revenue growth (CC)",
+    "target": "2–3%",
+    "delivered": "3.1% · +0.1 pp outside range",
+    "verdict": "met",
+    "sources": [
+      {
+        "doc_id": "INFY-6",
+        "page": 3,
+        "text": "The new guidance is growth between 2% and 3% in constant currency terms for the full year.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cf4a6179-8e43-4959-b055-91f1f7f4f076.pdf",
+        "period": "Oct 2025 Transcript AI Summary PPT REC"
+      },
+      {
+        "doc_id": "INFY-3",
+        "page": 4,
+        "text": "We had growth of 3.1% for the full year in constant currency terms.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+        "period": "Apr 2026 Transcript AI Summary PPT REC"
+      }
+    ]
+  },
+  {
+    "statement": "And our operating margin guidance remains the same as in the past quarter at 20% to 22% for the full year.",
+    "metric": "Operating margin",
+    "target": "20–22%",
+    "delivered": "21%",
+    "verdict": "met",
+    "sources": [
+      {
+        "doc_id": "INFY-6",
+        "page": 3,
+        "text": "And our operating margin guidance remains the same as in the past quarter at 20% to 22% for the full year.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cf4a6179-8e43-4959-b055-91f1f7f4f076.pdf",
+        "period": "Oct 2025 Transcript AI Summary PPT REC"
+      },
+      {
+        "doc_id": "INFY-3",
+        "page": 7,
+        "text": "Jayesh Sanghrajka So if you look at the margins, the full year margins is at 21%.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+        "period": "Apr 2026 Transcript AI Summary PPT REC"
+      }
+    ]
+  },
+  {
+    "statement": "Based on our performance in Q1 and our current outlook, our guidance for growth for financial year 2026 is revised from where it was 0% to 3%, now it will be 1% to 3% in constant currency terms.",
+    "metric": "Revenue growth (CC)",
+    "target": "1–3%",
+    "delivered": "3.1% · +0.1 pp outside range",
+    "verdict": "met",
+    "sources": [
+      {
+        "doc_id": "INFY-7",
+        "page": 3,
+        "text": "Based on our performance in Q1 and our current outlook, our guidance for growth for financial year 2026 is revised from where it was 0% to 3%, now it will be 1% to 3% in constant currency terms.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=10c91fa1-f133-476d-ada3-0143acdd9846.pdf",
+        "period": "Jul 2025 Transcript AI Summary PPT"
+      },
+      {
+        "doc_id": "INFY-3",
+        "page": 4,
+        "text": "We had growth of 3.1% for the full year in constant currency terms.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+        "period": "Apr 2026 Transcript AI Summary PPT REC"
+      }
+    ]
+  },
+  {
+    "statement": "Our margin guidance remains unchanged at 20% to 22%.",
+    "metric": "Operating margin",
+    "target": "20–22%",
+    "delivered": "21%",
+    "verdict": "met",
+    "sources": [
+      {
+        "doc_id": "INFY-7",
+        "page": 3,
+        "text": "Our margin guidance remains unchanged at 20% to 22%.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=10c91fa1-f133-476d-ada3-0143acdd9846.pdf",
+        "period": "Jul 2025 Transcript AI Summary PPT"
+      },
+      {
+        "doc_id": "INFY-3",
+        "page": 7,
+        "text": "Jayesh Sanghrajka So if you look at the margins, the full year margins is at 21%.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+        "period": "Apr 2026 Transcript AI Summary PPT REC"
+      }
+    ]
+  },
+  {
+    "statement": "Based on what we see in the environment today and building on our large deal wins in the past quarters, our guidance for growth in financial year 2026 is 0% to 3% in constant currency terms.",
+    "metric": "Revenue growth (CC)",
+    "target": "0–3%",
+    "delivered": "3.1% · +0.1 pp outside range",
+    "verdict": "met",
+    "sources": [
+      {
+        "doc_id": "INFY-8",
+        "page": 4,
+        "text": "Based on what we see in the environment today and building on our large deal wins in the past quarters, our guidance for growth in financial year 2026 is 0% to 3% in constant currency terms.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8c8bbc00-087d-4d75-9171-d37a3f83a170.pdf",
+        "period": "Apr 2025 Transcript AI Summary PPT REC"
+      },
+      {
+        "doc_id": "INFY-3",
+        "page": 4,
+        "text": "We had growth of 3.1% for the full year in constant currency terms.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+        "period": "Apr 2026 Transcript AI Summary PPT REC"
+      }
+    ]
+  },
+  {
+    "statement": "Our margin guidance for the financial year 2026 is at 20% to 22%.",
+    "metric": "Operating margin",
+    "target": "20–22%",
+    "delivered": "21%",
+    "verdict": "met",
+    "sources": [
+      {
+        "doc_id": "INFY-8",
+        "page": 4,
+        "text": "Our margin guidance for the financial year 2026 is at 20% to 22%.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8c8bbc00-087d-4d75-9171-d37a3f83a170.pdf",
+        "period": "Apr 2025 Transcript AI Summary PPT REC"
+      },
+      {
+        "doc_id": "INFY-3",
+        "page": 7,
+        "text": "Jayesh Sanghrajka So if you look at the margins, the full year margins is at 21%.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+        "period": "Apr 2026 Transcript AI Summary PPT REC"
+      }
+    ]
+  },
+  {
+    "statement": "Based on our Q2 performance and revised outlook for rest of the year, our revenue growth guidance is 1% to 2% YoY.in constant currency terms.",
+    "metric": "Revenue growth (CC)",
+    "target": "1–2%",
+    "delivered": "not_disclosed",
+    "verdict": "not_yet_due",
+    "sources": [
+      {
+        "doc_id": "INFY-1",
+        "page": 4,
+        "text": "Based on our Q2 performance and revised outlook for rest of the year, our revenue growth guidance is 1% to 2% YoY.in constant currency terms.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7982fc61-7765-4981-ab3d-6aec36ba2137.pdf",
+        "period": "Oct 2026 Transcript AI Summary PPT REC"
+      }
+    ]
+  },
+  {
+    "statement": "Our operating margin guidance remains at 20% to 22% for the year.",
+    "metric": "Operating margin",
+    "target": "20–22%",
+    "delivered": "not_disclosed",
+    "verdict": "not_yet_due",
+    "sources": [
+      {
+        "doc_id": "INFY-1",
+        "page": 4,
+        "text": "Our operating margin guidance remains at 20% to 22% for the year.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7982fc61-7765-4981-ab3d-6aec36ba2137.pdf",
+        "period": "Oct 2026 Transcript AI Summary PPT REC"
+      }
+    ]
+  },
+  {
+    "statement": "Our operating margin guidance remains the same at 20% to 22% operating margin.",
+    "metric": "Operating margin",
+    "target": "20–22%",
+    "delivered": "not_disclosed",
+    "verdict": "not_yet_due",
+    "sources": [
+      {
+        "doc_id": "INFY-2",
+        "page": 6,
+        "text": "Our operating margin guidance remains the same at 20% to 22% operating margin.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95f8af86-dc92-49dc-a7cf-ecce287f8cce.pdf",
+        "period": "Jul 2026 Transcript AI Summary PPT"
+      }
+    ]
+  },
+  {
+    "statement": "Our revenue growth guidance for the financial year 2027 is 1.5% to 3.5% growth year-on-year in constant currency terms.",
+    "metric": "Revenue growth (CC)",
+    "target": "1.5–3.5%",
+    "delivered": "not_disclosed",
+    "verdict": "not_yet_due",
+    "sources": [
+      {
+        "doc_id": "INFY-3",
+        "page": 4,
+        "text": "Our revenue growth guidance for the financial year 2027 is 1.5% to 3.5% growth year-on-year in constant currency terms.",
+        "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+        "period": "Apr 2026 Transcript AI Summary PPT REC"
+      }
+    ]
+  }
+]

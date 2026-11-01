@@ -1,0 +1,1 @@
+{"classification":{"tier":"cheap","rationale":"Rules first; batch leftovers"},"extraction":{"tier":"cheap","rationale":"Schema validation plus numeric cross-check"},"verdict":{"tier":"strong","rationale":"Cross-period reasoning only when evidence is complete"},"math":{"tier":"code","rationale":"No model arithmetic"}}

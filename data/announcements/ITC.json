@@ -1,0 +1,22 @@
+[
+  {
+    "id": "a70ebe03c5bc3c",
+    "ticker": "ITC",
+    "ts_iso": "2026-10-15T19:20:08+05:30",
+    "headline": "ESOP/ESOS/ESPS",
+    "body": "ITC Limited has informed the Exchange regarding Allotment of 1395500  Shares.",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/ITC_15102026192000_SE.pdf",
+    "source": "NSE",
+    "category": "unclassified"
+  },
+  {
+    "id": "2218fdc6c5e704",
+    "ticker": "ITC",
+    "ts_iso": "2026-10-05T14:21:07+05:30",
+    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+    "body": "ITC Limited has informed the Exchange about Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/ITC_05102026142025_Demat_Remat_quarterly_Sept26.pdf",
+    "source": "NSE",
+    "category": "unclassified"
+  }
+]

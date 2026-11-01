@@ -1,0 +1,72 @@
+[
+  {
+    "id": "375690068354ab",
+    "ticker": "TITAN",
+    "ts_iso": "2026-10-28T17:26:00+05:30",
+    "headline": "Copy of Newspaper Publication",
+    "body": "Titan Company Limited has informed the Exchange about Copy of Newspaper Publication",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/TITAN_28102026172546_SEnewspaperadlossofshares.pdf",
+    "source": "NSE",
+    "category": "unclassified"
+  },
+  {
+    "id": "68b1c5e6c29b80",
+    "ticker": "TITAN",
+    "ts_iso": "2026-10-28T13:49:00+05:30",
+    "headline": "Acquisition",
+    "body": "Titan Company Limited has informed the Exchange about the Company has incorporated Titan Company Canada Inc. as its wholly owned subsidiary.",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/TITAN_28102026134838_SEIntimation_-_Canada_Incorporation.pdf",
+    "source": "NSE",
+    "category": "M&A"
+  },
+  {
+    "id": "9e8487dca0fa82",
+    "ticker": "TITAN",
+    "ts_iso": "2026-10-23T19:58:53+05:30",
+    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+    "body": "Titan Company Limited has informed the Exchange about Earnings call for Q2 and half year ended FY 2026-27",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/TITAN_23102026195704_SEQ2FY27EarningCall.pdf",
+    "source": "NSE",
+    "category": "earnings_call"
+  },
+  {
+    "id": "04828722460968",
+    "ticker": "TITAN",
+    "ts_iso": "2026-10-19T16:11:44+05:30",
+    "headline": "General Updates",
+    "body": "Titan Company Limited has informed the Exchange about Redemption of Commercial Paper",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/TITAN_19102026161128_SECPRedemption16102026.pdf",
+    "source": "NSE",
+    "category": "fund_raise"
+  },
+  {
+    "id": "882f9b83cef6f8",
+    "ticker": "TITAN",
+    "ts_iso": "2026-10-13T10:23:55+05:30",
+    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+    "body": "Titan Company Limited has informed the Exchange about Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/TITAN_13102026102335_SERegulation745.pdf",
+    "source": "NSE",
+    "category": "unclassified"
+  },
+  {
+    "id": "19f1007304dd4e",
+    "ticker": "TITAN",
+    "ts_iso": "2026-10-08T16:12:50+05:30",
+    "headline": "Updates",
+    "body": "Titan Company Limited has informed the Exchange regarding 'Redemption of Commercial Paper'.",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/TITAN_08102026161235_SECPRedemption08102026.pdf",
+    "source": "NSE",
+    "category": "fund_raise"
+  },
+  {
+    "id": "9b9ee03bac23ae",
+    "ticker": "TITAN",
+    "ts_iso": "2026-10-06T18:22:46+05:30",
+    "headline": "Updates",
+    "body": "Titan Company Limited has informed the Exchange regarding 'Quarterly Update   Q2 FY 2026-27'.",
+    "attachment_url": "https://nsearchives.nseindia.com/corporate/TITAN_06102026182232_Q2update202627.pdf",
+    "source": "NSE",
+    "category": "unclassified"
+  }
+]

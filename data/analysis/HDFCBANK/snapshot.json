@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Profit before tax",
+    "values": [
+      20967,
+      21243,
+      17761,
+      22727,
+      23968,
+      23973,
+      25573,
+      20850,
+      26659,
+      26961,
+      27672,
+      27193,
+      28663
+    ],
+    "current": 28663,
+    "prev": 27193,
+    "year": 26659,
+    "qoq": 5.405802963998087,
+    "yoy": 7.517161183840354,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "HDFCBANK-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 20,967 | 21,243 | 17,761 | 22,727 | 23,968 | 23,973 | 25,573 | 20,850 | 26,659 | 26,961 | 27,672 | 27,193 | 28,663",
+      "url": "https://www.screener.in/company/HDFCBANK/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      17312,
+      17718,
+      18013,
+      17188,
+      18627,
+      18340,
+      19285,
+      17090,
+      20364,
+      20691,
+      21074,
+      20383,
+      21537
+    ],
+    "current": 21537,
+    "prev": 20383,
+    "year": 20364,
+    "qoq": 5.661580729038905,
+    "yoy": 5.760164997053624,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "HDFCBANK-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 17,312 | 17,718 | 18,013 | 17,188 | 18,627 | 18,340 | 19,285 | 17,090 | 20,364 | 20,691 | 21,074 | 20,383 | 21,537",
+      "url": "https://www.screener.in/company/HDFCBANK/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      11.09,
+      11.37,
+      11.6,
+      10.83,
+      11.68,
+      11.54,
+      12.31,
+      10.6,
+      12.76,
+      12.87,
+      13.22,
+      12.5,
+      13.43
+    ],
+    "current": 13.43,
+    "prev": 12.5,
+    "year": 12.76,
+    "qoq": 7.439999999999998,
+    "yoy": 5.250783699059561,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "HDFCBANK-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 11.09 | 11.37 | 11.60 | 10.83 | 11.68 | 11.54 | 12.31 | 10.60 | 12.76 | 12.87 | 13.22 | 12.50 | 13.43",
+      "url": "https://www.screener.in/company/HDFCBANK/consolidated/"
+    }
+  }
+]

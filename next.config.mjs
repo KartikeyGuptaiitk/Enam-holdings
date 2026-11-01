@@ -1,0 +1,1 @@
+const config={devIndicators:false,outputFileTracingIncludes:{'/*':['./config/*.json','./data/announcements/*.json','./data/prices/*.json','./data/research/*.json','./data/filing-passages.json','./data/briefing.json']}};export default config;

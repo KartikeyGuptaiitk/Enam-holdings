@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      231886,
+      225086,
+      236533,
+      231784,
+      231535,
+      239986,
+      261388,
+      243632,
+      254623,
+      264905,
+      294059,
+      309468,
+      330601
+    ],
+    "current": 330601,
+    "prev": 309468,
+    "year": 254623,
+    "qoq": 6.828815903421355,
+    "yoy": 29.83940963699273,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "RELIANCE-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 231,886 | 225,086 | 236,533 | 231,784 | 231,535 | 239,986 | 261,388 | 243,632 | 254,623 | 264,905 | 294,059 | 309,468 | 330,601",
+      "url": "https://www.screener.in/company/RELIANCE/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      40968,
+      40656,
+      42516,
+      38765,
+      39058,
+      43789,
+      43832,
+      42905,
+      45885,
+      46018,
+      44141,
+      47517,
+      56616
+    ],
+    "current": 56616,
+    "prev": 47517,
+    "year": 45885,
+    "qoq": 19.148936170212767,
+    "yoy": 23.386727688787186,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "RELIANCE-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 26,493 | 25,833 | 27,720 | 23,234 | 25,037 | 28,643 | 29,103 | 37,146 | 29,124 | 29,697 | 27,195 | 30,630 | 38,613\nInterest | 5,731 | 5,789 | 5,761 | 5,918 | 6,017 | 6,179 | 6,155 | 7,036 | 6,827 | 6,613 | 6,585 | 8,337 | 8,481\nDepreciation | 12,585 | 12,903 | 13,569 | 13,596 | 12,880 | 13,181 | 13,479 | 13,842 | 14,416 | 14,622 | 14,808 | 15,100 | 15,315\nOther Income + | 3,841 | 3,869 | 4,534 | 3,983 | 4,876 | 4,214 | 4,905 | 15,119 | 4,482 | 4,914 | 4,447 | 6,550 | 5,793",
+      "url": "https://www.screener.in/company/RELIANCE/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      26493,
+      25833,
+      27720,
+      23234,
+      25037,
+      28643,
+      29103,
+      37146,
+      29124,
+      29697,
+      27195,
+      30630,
+      38613
+    ],
+    "current": 38613,
+    "prev": 30630,
+    "year": 29124,
+    "qoq": 26.06268364348678,
+    "yoy": 32.58137618459003,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "RELIANCE-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 26,493 | 25,833 | 27,720 | 23,234 | 25,037 | 28,643 | 29,103 | 37,146 | 29,124 | 29,697 | 27,195 | 30,630 | 38,613",
+      "url": "https://www.screener.in/company/RELIANCE/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      19878,
+      19641,
+      21243,
+      17445,
+      19323,
+      21930,
+      22611,
+      30783,
+      22092,
+      22290,
+      20589,
+      23196,
+      29550
+    ],
+    "current": 29550,
+    "prev": 23196,
+    "year": 22092,
+    "qoq": 27.392653905845837,
+    "yoy": 33.758826724606195,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "RELIANCE-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 19,878 | 19,641 | 21,243 | 17,445 | 19,323 | 21,930 | 22,611 | 30,783 | 22,092 | 22,290 | 20,589 | 23,196 | 29,550",
+      "url": "https://www.screener.in/company/RELIANCE/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      12.85,
+      12.76,
+      14.01,
+      11.19,
+      12.24,
+      13.7,
+      14.34,
+      19.95,
+      13.42,
+      13.78,
+      12.54,
+      15.48,
+      18.88
+    ],
+    "current": 18.88,
+    "prev": 15.48,
+    "year": 13.42,
+    "qoq": 21.963824289405675,
+    "yoy": 40.68554396423249,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "RELIANCE-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 12.85 | 12.76 | 14.01 | 11.19 | 12.24 | 13.70 | 14.34 | 19.95 | 13.42 | 13.78 | 12.54 | 15.48 | 18.88",
+      "url": "https://www.screener.in/company/RELIANCE/consolidated/"
+    }
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      26672,
+      28446,
+      28499,
+      28057,
+      28862,
+      29890,
+      30246,
+      30349,
+      31942,
+      33872,
+      33981,
+      34579,
+      35620
+    ],
+    "current": 35620,
+    "prev": 34579,
+    "year": 31942,
+    "qoq": 3.0104977009167415,
+    "yoy": 11.514620249201677,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "HCLTECH-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 26,672 | 28,446 | 28,499 | 28,057 | 28,862 | 29,890 | 30,246 | 30,349 | 31,942 | 33,872 | 33,981 | 34,579 | 35,620",
+      "url": "https://www.screener.in/company/HCLTECH/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      5929,
+      6787,
+      6117,
+      5793,
+      6369,
+      6860,
+      6482,
+      6035,
+      6545,
+      7412,
+      6712,
+      6870,
+      7439
+    ],
+    "current": 7439,
+    "prev": 6870,
+    "year": 6545,
+    "qoq": 8.282387190684135,
+    "yoy": 13.659281894576011,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "HCLTECH-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 5,128 | 5,874 | 5,269 | 5,707 | 5,687 | 6,132 | 5,735 | 5,189 | 5,702 | 5,509 | 5,702 | 6,108 | 6,467\nInterest | 156 | 140 | 171 | 191 | 131 | 166 | 156 | 209 | 215 | 205 | 240 | 84 | 194\nDepreciation | 1,010 | 1,143 | 1,093 | 998 | 1,007 | 1,039 | 1,040 | 1,093 | 1,043 | 1,127 | 1,092 | 1,039 | 1,012\nOther Income + | 365 | 370 | 416 | 1,103 | 456 | 477 | 449 | 456 | 415 | -571 | 322 | 361 | 234",
+      "url": "https://www.screener.in/company/HCLTECH/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      5128,
+      5874,
+      5269,
+      5707,
+      5687,
+      6132,
+      5735,
+      5189,
+      5702,
+      5509,
+      5702,
+      6108,
+      6467
+    ],
+    "current": 6467,
+    "prev": 6108,
+    "year": 5702,
+    "qoq": 5.877537655533726,
+    "yoy": 13.41634514205542,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "HCLTECH-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 5,128 | 5,874 | 5,269 | 5,707 | 5,687 | 6,132 | 5,735 | 5,189 | 5,702 | 5,509 | 5,702 | 6,108 | 6,467",
+      "url": "https://www.screener.in/company/HCLTECH/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      3833,
+      4351,
+      3995,
+      4259,
+      4237,
+      4594,
+      4309,
+      3844,
+      4236,
+      4082,
+      4490,
+      4626,
+      5132
+    ],
+    "current": 5132,
+    "prev": 4626,
+    "year": 4236,
+    "qoq": 10.938175529615219,
+    "yoy": 21.152030217186024,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "HCLTECH-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 3,833 | 4,351 | 3,995 | 4,259 | 4,237 | 4,594 | 4,309 | 3,844 | 4,236 | 4,082 | 4,490 | 4,626 | 5,132",
+      "url": "https://www.screener.in/company/HCLTECH/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      14.12,
+      16.03,
+      14.69,
+      15.69,
+      15.61,
+      16.92,
+      15.87,
+      14.16,
+      15.61,
+      15.02,
+      16.54,
+      17.04,
+      18.91
+    ],
+    "current": 18.91,
+    "prev": 17.04,
+    "year": 15.61,
+    "qoq": 10.974178403755875,
+    "yoy": 21.140294682895586,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "HCLTECH-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 14.12 | 16.03 | 14.69 | 15.69 | 15.61 | 16.92 | 15.87 | 14.16 | 15.61 | 15.02 | 16.54 | 17.04 | 18.91",
+      "url": "https://www.screener.in/company/HCLTECH/consolidated/"
+    }
+  }
+]

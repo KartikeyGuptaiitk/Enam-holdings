@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+__pycache__/
+tmp/
+*.zip
+playwright-report/
+test-results/
+
+*.tsbuildinfo
+
+# Re-downloadable HTTP/PDF responses; extracted offline snapshots remain tracked.
+data/cache/http/

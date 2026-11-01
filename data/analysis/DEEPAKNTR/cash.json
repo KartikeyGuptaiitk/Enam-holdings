@@ -1,0 +1,27 @@
+[
+  {
+    "period": "Mar 2022",
+    "cfo": 824,
+    "pat": 1067
+  },
+  {
+    "period": "Mar 2023",
+    "cfo": 650,
+    "pat": 852
+  },
+  {
+    "period": "Mar 2024",
+    "cfo": 874,
+    "pat": 811
+  },
+  {
+    "period": "Mar 2025",
+    "cfo": 625,
+    "pat": 697
+  },
+  {
+    "period": "Mar 2026",
+    "cfo": 539,
+    "pat": 551
+  }
+]

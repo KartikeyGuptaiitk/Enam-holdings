@@ -1,0 +1,110 @@
+[
+  {
+    "ticker": "RELIANCE",
+    "name": "Reliance Industries",
+    "sector": "Energy",
+    "weight_pct": 10
+  },
+  {
+    "ticker": "HDFCBANK",
+    "name": "HDFC Bank",
+    "sector": "Banking",
+    "weight_pct": 9
+  },
+  {
+    "ticker": "ICICIBANK",
+    "name": "ICICI Bank",
+    "sector": "Banking",
+    "weight_pct": 8
+  },
+  {
+    "ticker": "SBIN",
+    "name": "State Bank of India",
+    "sector": "Banking",
+    "weight_pct": 6
+  },
+  {
+    "ticker": "TCS",
+    "name": "Tata Consultancy Services",
+    "sector": "IT services",
+    "weight_pct": 8
+  },
+  {
+    "ticker": "INFY",
+    "name": "Infosys",
+    "sector": "IT services",
+    "weight_pct": 7
+  },
+  {
+    "ticker": "PERSISTENT",
+    "name": "Persistent Systems",
+    "sector": "IT services",
+    "weight_pct": 4
+  },
+  {
+    "ticker": "SUNPHARMA",
+    "name": "Sun Pharmaceutical",
+    "sector": "Healthcare",
+    "weight_pct": 6
+  },
+  {
+    "ticker": "MARUTI",
+    "name": "Maruti Suzuki",
+    "sector": "Auto",
+    "weight_pct": 5
+  },
+  {
+    "ticker": "HINDUNILVR",
+    "name": "Hindustan Unilever",
+    "sector": "Consumer",
+    "weight_pct": 5
+  },
+  {
+    "ticker": "ITC",
+    "name": "ITC",
+    "sector": "Consumer",
+    "weight_pct": 5
+  },
+  {
+    "ticker": "LT",
+    "name": "Larsen & Toubro",
+    "sector": "Industrials",
+    "weight_pct": 6
+  },
+  {
+    "ticker": "BAJFINANCE",
+    "name": "Bajaj Finance",
+    "sector": "Financials",
+    "weight_pct": 5
+  },
+  {
+    "ticker": "TITAN",
+    "name": "Titan Company",
+    "sector": "Consumer",
+    "weight_pct": 4
+  },
+  {
+    "ticker": "ASIANPAINT",
+    "name": "Asian Paints",
+    "sector": "Materials",
+    "weight_pct": 3
+  },
+  {
+    "ticker": "POLYCAB",
+    "name": "Polycab India",
+    "sector": "Industrials",
+    "weight_pct": 3
+  },
+  {
+    "ticker": "DIXON",
+    "name": "Dixon Technologies",
+    "sector": "Electronics",
+    "weight_pct": 3
+  },
+  {
+    "ticker": "CDSL",
+    "name": "CDSL",
+    "sector": "Financials",
+    "weight_pct": 3
+  }
+]

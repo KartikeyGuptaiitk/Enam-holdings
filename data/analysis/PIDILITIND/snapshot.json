@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      3076,
+      3130,
+      2902,
+      3395,
+      3235,
+      3369,
+      3141,
+      3753,
+      3554,
+      3710,
+      3583,
+      4552,
+      4298
+    ],
+    "current": 4298,
+    "prev": 4552,
+    "year": 3554,
+    "qoq": -5.579964850615114,
+    "yoy": 20.934158694428813,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "PIDILITIND-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 3,076 | 3,130 | 2,902 | 3,395 | 3,235 | 3,369 | 3,141 | 3,753 | 3,554 | 3,710 | 3,583 | 4,552 | 4,298",
+      "url": "https://www.screener.in/company/PIDILITIND/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      678,
+      742,
+      575,
+      812,
+      768,
+      798,
+      632,
+      941,
+      850,
+      894,
+      831,
+      1193,
+      877
+    ],
+    "current": 877,
+    "prev": 1193,
+    "year": 850,
+    "qoq": -26.487845766974015,
+    "yoy": 3.176470588235294,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "PIDILITIND-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 622 | 687 | 426 | 770 | 725 | 752 | 576 | 916 | 787 | 840 | 777 | 1,192 | 834\nInterest | 13 | 13 | 13 | 12 | 12 | 12 | 14 | 14 | 13 | 13 | 14 | 13 | 13\nDepreciation | 75 | 79 | 113 | 84 | 88 | 90 | 97 | 97 | 100 | 101 | 97 | 97 | 100\nOther Income + | 32 | 37 | -23 | 54 | 57 | 56 | 55 | 86 | 50 | 60 | 57 | 109 | 70",
+      "url": "https://www.screener.in/company/PIDILITIND/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      622,
+      687,
+      426,
+      770,
+      725,
+      752,
+      576,
+      916,
+      787,
+      840,
+      777,
+      1192,
+      834
+    ],
+    "current": 834,
+    "prev": 1192,
+    "year": 787,
+    "qoq": -30.033557046979865,
+    "yoy": 5.972045743329097,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "PIDILITIND-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 622 | 687 | 426 | 770 | 725 | 752 | 576 | 916 | 787 | 840 | 777 | 1,192 | 834",
+      "url": "https://www.screener.in/company/PIDILITIND/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      459,
+      511,
+      304,
+      571,
+      540,
+      557,
+      428,
+      678,
+      585,
+      624,
+      584,
+      884,
+      626
+    ],
+    "current": 626,
+    "prev": 884,
+    "year": 585,
+    "qoq": -29.185520361990953,
+    "yoy": 7.0085470085470085,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "PIDILITIND-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 459 | 511 | 304 | 571 | 540 | 557 | 428 | 678 | 585 | 624 | 584 | 884 | 626",
+      "url": "https://www.screener.in/company/PIDILITIND/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      4.43,
+      5.02,
+      2.96,
+      5.57,
+      5.26,
+      5.43,
+      4.15,
+      6.61,
+      5.69,
+      6.07,
+      5.69,
+      8.57,
+      6.03
+    ],
+    "current": 6.03,
+    "prev": 8.57,
+    "year": 5.69,
+    "qoq": -29.638273045507585,
+    "yoy": 5.975395430579962,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "PIDILITIND-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 4.43 | 5.02 | 2.96 | 5.57 | 5.26 | 5.43 | 4.15 | 6.61 | 5.69 | 6.07 | 5.69 | 8.57 | 6.03",
+      "url": "https://www.screener.in/company/PIDILITIND/consolidated/"
+    }
+  }
+]

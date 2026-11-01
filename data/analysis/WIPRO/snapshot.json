@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      22516,
+      22205,
+      22208,
+      21964,
+      22302,
+      22319,
+      22504,
+      22135,
+      22697,
+      23556,
+      24236,
+      24479,
+      24753
+    ],
+    "current": 24753,
+    "prev": 24479,
+    "year": 22697,
+    "qoq": 1.1193267698843907,
+    "yoy": 9.058465876547562,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "WIPRO-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 22,516 | 22,205 | 22,208 | 21,964 | 22,302 | 22,319 | 22,504 | 22,135 | 22,697 | 23,556 | 24,236 | 24,479 | 24,753",
+      "url": "https://www.screener.in/company/WIPRO/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      3969,
+      4198,
+      4380,
+      4350,
+      4504,
+      4539,
+      4625,
+      4233,
+      4372,
+      4297,
+      4909,
+      4632,
+      4863
+    ],
+    "current": 4863,
+    "prev": 4632,
+    "year": 4372,
+    "qoq": 4.987046632124352,
+    "yoy": 11.230558096980788,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "WIPRO-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 3,509 | 3,552 | 3,862 | 4,022 | 4,278 | 4,453 | 4,743 | 4,258 | 4,282 | 4,134 | 4,668 | 4,334 | 4,205\nInterest | 303 | 312 | 331 | 329 | 357 | 415 | 377 | 361 | 361 | 366 | 370 | 473 | 545\nDepreciation | 897 | 932 | 840 | 729 | 831 | 676 | 722 | 686 | 692 | 805 | 728 | 804 | 877\nOther Income + | 740 | 598 | 653 | 730 | 962 | 1,005 | 1,217 | 1,072 | 963 | 1,008 | 857 | 979 | 764",
+      "url": "https://www.screener.in/company/WIPRO/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      3509,
+      3552,
+      3862,
+      4022,
+      4278,
+      4453,
+      4743,
+      4258,
+      4282,
+      4134,
+      4668,
+      4334,
+      4205
+    ],
+    "current": 4205,
+    "prev": 4334,
+    "year": 4282,
+    "qoq": -2.976465159206276,
+    "yoy": -1.798225128444652,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "WIPRO-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 3,509 | 3,552 | 3,862 | 4,022 | 4,278 | 4,453 | 4,743 | 4,258 | 4,282 | 4,134 | 4,668 | 4,334 | 4,205",
+      "url": "https://www.screener.in/company/WIPRO/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      2667,
+      2701,
+      2858,
+      3037,
+      3227,
+      3367,
+      3588,
+      3336,
+      3262,
+      3145,
+      3522,
+      3356,
+      3200
+    ],
+    "current": 3200,
+    "prev": 3356,
+    "year": 3262,
+    "qoq": -4.648390941597139,
+    "yoy": -1.900674432863274,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "WIPRO-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 2,667 | 2,701 | 2,858 | 3,037 | 3,227 | 3,367 | 3,588 | 3,336 | 3,262 | 3,145 | 3,522 | 3,356 | 3,200",
+      "url": "https://www.screener.in/company/WIPRO/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      2.53,
+      2.58,
+      2.71,
+      2.87,
+      3.07,
+      3.2,
+      3.41,
+      3.18,
+      3.1,
+      2.97,
+      3.34,
+      3.38,
+      3.23
+    ],
+    "current": 3.23,
+    "prev": 3.38,
+    "year": 3.1,
+    "qoq": -4.4378698224852045,
+    "yoy": 4.1935483870967705,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "WIPRO-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 2.53 | 2.58 | 2.71 | 2.87 | 3.07 | 3.20 | 3.41 | 3.18 | 3.10 | 2.97 | 3.34 | 3.38 | 3.23",
+      "url": "https://www.screener.in/company/WIPRO/consolidated/"
+    }
+  }
+]

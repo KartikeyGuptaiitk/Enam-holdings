@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      11897,
+      12529,
+      14164,
+      12494,
+      13266,
+      14534,
+      17740,
+      14916,
+      16523,
+      18725,
+      25416,
+      26920,
+      21356
+    ],
+    "current": 21356,
+    "prev": 26920,
+    "year": 16523,
+    "qoq": -20.66864784546805,
+    "yoy": 29.250136173818316,
+    "period": "Jun 2026",
+    "source": {
+      "doc_id": "TITAN-screener",
+      "period": "Jun 2023 · Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026",
+      "page": 0,
+      "text": "Sales + | 11,897 | 12,529 | 14,164 | 12,494 | 13,266 | 14,534 | 17,740 | 14,916 | 16,523 | 18,725 | 25,416 | 26,920 | 21,356",
+      "url": "https://www.screener.in/company/TITAN/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      1125,
+      1411,
+      1565,
+      1191,
+      1247,
+      1236,
+      1674,
+      1537,
+      1830,
+      1875,
+      2713,
+      1938,
+      2890
+    ],
+    "current": 2890,
+    "prev": 1938,
+    "year": 1830,
+    "qoq": 49.122807017543856,
+    "yoy": 57.92349726775956,
+    "period": "Jun 2026",
+    "source": {
+      "doc_id": "TITAN-screener",
+      "period": "Jun 2023 · Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 1,002 | 1,252 | 1,378 | 991 | 973 | 948 | 1,396 | 1,218 | 1,480 | 1,522 | 2,223 | 1,577 | 2,429\nInterest | 109 | 140 | 169 | 201 | 230 | 240 | 231 | 252 | 271 | 277 | 282 | 350 | 353\nDepreciation | 128 | 144 | 154 | 158 | 164 | 171 | 175 | 183 | 184 | 189 | 207 | 246 | 256\nOther Income + | 114 | 125 | 136 | 159 | 120 | 123 | 128 | 116 | 105 | 113 | -1 | 235 | 148",
+      "url": "https://www.screener.in/company/TITAN/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      1002,
+      1252,
+      1378,
+      991,
+      973,
+      948,
+      1396,
+      1218,
+      1480,
+      1522,
+      2223,
+      1577,
+      2429
+    ],
+    "current": 2429,
+    "prev": 1577,
+    "year": 1480,
+    "qoq": 54.02663284717819,
+    "yoy": 64.12162162162161,
+    "period": "Jun 2026",
+    "source": {
+      "doc_id": "TITAN-screener",
+      "period": "Jun 2023 · Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026",
+      "page": 0,
+      "text": "Profit before tax | 1,002 | 1,252 | 1,378 | 991 | 973 | 948 | 1,396 | 1,218 | 1,480 | 1,522 | 2,223 | 1,577 | 2,429",
+      "url": "https://www.screener.in/company/TITAN/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      756,
+      916,
+      1053,
+      771,
+      715,
+      704,
+      1047,
+      871,
+      1091,
+      1120,
+      1684,
+      1179,
+      1777
+    ],
+    "current": 1777,
+    "prev": 1179,
+    "year": 1091,
+    "qoq": 50.72094995759117,
+    "yoy": 62.87809349220899,
+    "period": "Jun 2026",
+    "source": {
+      "doc_id": "TITAN-screener",
+      "period": "Jun 2023 · Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026",
+      "page": 0,
+      "text": "Net Profit + | 756 | 916 | 1,053 | 771 | 715 | 704 | 1,047 | 871 | 1,091 | 1,120 | 1,684 | 1,179 | 1,777",
+      "url": "https://www.screener.in/company/TITAN/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      8.48,
+      10.31,
+      11.86,
+      8.68,
+      8.05,
+      7.93,
+      11.79,
+      9.81,
+      12.29,
+      12.62,
+      18.97,
+      13.28,
+      20.02
+    ],
+    "current": 20.02,
+    "prev": 13.28,
+    "year": 12.29,
+    "qoq": 50.75301204819278,
+    "yoy": 62.89666395443451,
+    "period": "Jun 2026",
+    "source": {
+      "doc_id": "TITAN-screener",
+      "period": "Jun 2023 · Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026",
+      "page": 0,
+      "text": "EPS in Rs | 8.48 | 10.31 | 11.86 | 8.68 | 8.05 | 7.93 | 11.79 | 9.81 | 12.29 | 12.62 | 18.97 | 13.28 | 20.02",
+      "url": "https://www.screener.in/company/TITAN/consolidated/"
+    }
+  }
+]

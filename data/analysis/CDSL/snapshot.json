@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Revenue",
+    "values": [
+      207,
+      214,
+      241,
+      257,
+      322,
+      278,
+      224,
+      259,
+      319,
+      304,
+      263,
+      293,
+      394
+    ],
+    "current": 394,
+    "prev": 293,
+    "year": 319,
+    "qoq": 34.470989761092156,
+    "yoy": 23.510971786833856,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "CDSL-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Sales + | 207 | 214 | 241 | 257 | 322 | 278 | 224 | 259 | 319 | 304 | 263 | 293 | 394",
+      "url": "https://www.screener.in/company/CDSL/consolidated/"
+    }
+  },
+  {
+    "name": "EBITDA (derived)",
+    "values": [
+      128,
+      131,
+      147,
+      155,
+      200,
+      160,
+      109,
+      130,
+      177,
+      160,
+      115,
+      138,
+      227
+    ],
+    "current": 227,
+    "prev": 138,
+    "year": 177,
+    "qoq": 64.4927536231884,
+    "yoy": 28.24858757062147,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "CDSL-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Derived EBITDA = PBT + Interest + Depreciation - Other Income. Rounded standardized inputs; exceptional items may affect comparability.\nProfit before tax | 145 | 145 | 168 | 175 | 225 | 168 | 127 | 151 | 183 | 172 | 103 | 167 | 230\nInterest | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0\nDepreciation | 6 | 7 | 8 | 10 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20\nOther Income + | 23 | 21 | 29 | 30 | 37 | 21 | 32 | 36 | 22 | 29 | 6 | 48 | 23",
+      "url": "https://www.screener.in/company/CDSL/consolidated/"
+    }
+  },
+  {
+    "name": "Profit before tax",
+    "values": [
+      145,
+      145,
+      168,
+      175,
+      225,
+      168,
+      127,
+      151,
+      183,
+      172,
+      103,
+      167,
+      230
+    ],
+    "current": 230,
+    "prev": 167,
+    "year": 183,
+    "qoq": 37.72455089820359,
+    "yoy": 25.683060109289617,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "CDSL-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Profit before tax | 145 | 145 | 168 | 175 | 225 | 168 | 127 | 151 | 183 | 172 | 103 | 167 | 230",
+      "url": "https://www.screener.in/company/CDSL/consolidated/"
+    }
+  },
+  {
+    "name": "PAT",
+    "values": [
+      109,
+      107,
+      129,
+      134,
+      162,
+      130,
+      100,
+      102,
+      140,
+      133,
+      80,
+      118,
+      173
+    ],
+    "current": 173,
+    "prev": 118,
+    "year": 140,
+    "qoq": 46.61016949152542,
+    "yoy": 23.57142857142857,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "CDSL-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "Net Profit + | 109 | 107 | 129 | 134 | 162 | 130 | 100 | 102 | 140 | 133 | 80 | 118 | 173",
+      "url": "https://www.screener.in/company/CDSL/consolidated/"
+    }
+  },
+  {
+    "name": "EPS in Rs",
+    "values": [
+      5.21,
+      5.14,
+      6.18,
+      6.42,
+      7.75,
+      6.22,
+      4.8,
+      4.9,
+      6.71,
+      6.38,
+      3.84,
+      5.62,
+      8.32
+    ],
+    "current": 8.32,
+    "prev": 5.62,
+    "year": 6.71,
+    "qoq": 48.04270462633452,
+    "yoy": 23.994038748137115,
+    "period": "Sep 2026",
+    "source": {
+      "doc_id": "CDSL-screener",
+      "period": "Sep 2023 · Dec 2023 · Mar 2024 · Jun 2024 · Sep 2024 · Dec 2024 · Mar 2025 · Jun 2025 · Sep 2025 · Dec 2025 · Mar 2026 · Jun 2026 · Sep 2026",
+      "page": 0,
+      "text": "EPS in Rs | 5.21 | 5.14 | 6.18 | 6.42 | 7.75 | 6.22 | 4.80 | 4.90 | 6.71 | 6.38 | 3.84 | 5.62 | 8.32",
+      "url": "https://www.screener.in/company/CDSL/consolidated/"
+    }
+  }
+]
