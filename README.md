@@ -41,8 +41,8 @@ npm start
 
 The server listens on port 3000. On your own network, open your computer's address
 on a phone; PWA installation and service workers require HTTPS except on localhost.
-Deployment URL: **not deployed from this cloud session**. On Vercel import the GitHub
-repository, use Next.js and the build command above. The snapshot requires no secrets.
+Live prototype: **https://enam-holdings-bay.vercel.app/**.
+The repository is connected to Vercel; main-branch commits trigger deployment. The snapshot requires no secrets.
 Live unknown-ticker ingestion requires Python and does not run on Vercel.
 
 ## Try it
@@ -66,7 +66,7 @@ npm run lint
 npm run build
 ```
 
-Linux production build, strict typecheck, lint and 47 unit tests passed. Chromium QA
+The completed build passed Linux production build, strict typecheck, lint and 51 unit tests. Chromium QA
 covered 390×844 and 1440×1000 routes, source drawers, persisted/deduplicated alerts,
 unknown ticker state and offline reload of all three main routes. See
 [QA evidence](docs/qa/README.md), [decisions](DECISIONS.md), and [handoff](CLOUD_HANDOFF.md).
@@ -95,7 +95,8 @@ items limit comparison. PAT may include non-controlling interests. See the three
 manual reconciliation in DECISIONS.md; full reconciliation is not claimed.
 
 Raw source data is retained under data/. Compact retrieved pages feed the initial UI;
-this still produces a large HTML payload and should be split before wider rollout.
+the deployed HTML was measured at approximately 494 kB uncompressed, with saved research
+loaded through the precached snapshot endpoint. Field performance is not certified.
 
 ## Optional refresh and providers
 
@@ -118,7 +119,7 @@ and strong cross-document reasoning; arithmetic never uses a model. Adapters and
 provider cost tracking are not integrated into this deterministic demo. Measured demo
 model spend: $0, zero model tokens, not a forecast of refresh costs.
 
-No BSE fallback, management biography enrichment, web push, account sync, advanced pull
-modules or live scheduler is implemented. Promise scoring is a limited statement-based
-heuristic, not a judgment of management. Deployment requires the owner's Vercel access;
-attach your Codex chat export manually if required for submission.
+No BSE fallback, management biography enrichment, web push, account sync or live scheduler
+is implemented. Additional research lenses are limited to saved quarterly series, disclosed
+balance-sheet fields, exact business passages and mechanical bull/bear comparisons. Promise scoring is a limited statement-based
+heuristic, not a judgment of management. Actual conversation share links accompany the submission.
