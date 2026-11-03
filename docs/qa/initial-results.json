@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "route": "/",
+      "heading": "Signal over noise.",
+      "overflow": false
+    },
+    {
+      "route": "/ask",
+      "heading": "Words. Meet numbers.",
+      "overflow": false
+    },
+    {
+      "route": "/watch",
+      "heading": "Keep a quiet watch.",
+      "overflow": false
+    },
+    {
+      "route": "/company/WIPRO",
+      "heading": "Words. Meet numbers.",
+      "overflow": false
+    },
+    {
+      "route": "/company/HCLTECH",
+      "heading": "Words. Meet numbers.",
+      "overflow": false
+    },
+    {
+      "route": "/company/NOTAREALTICKER",
+      "heading": "Words. Meet numbers.",
+      "overflow": false
+    },
+    {
+      "alerts": 4,
+      "persisted": true,
+      "deduplicated": true
+    },
+    {
+      "offline": "/",
+      "heading": "Signal over noise."
+    },
+    {
+      "offline": "/ask",
+      "heading": "Words. Meet numbers."
+    },
+    {
+      "offline": "/watch",
+      "heading": "Keep a quiet watch."
+    },
+    {
+      "desktop": "/",
+      "overflow": false
+    },
+    {
+      "desktop": "/ask",
+      "overflow": false
+    },
+    {
+      "desktop": "/watch",
+      "overflow": false
+    },
+    {
+      "desktop": "/company/INFY",
+      "overflow": false
+    }
+  ],
+  "errors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+}

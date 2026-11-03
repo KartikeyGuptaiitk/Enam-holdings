@@ -42,3 +42,15 @@ Never report this build as finished until production, offline and visual QA pass
 
 ## GitHub import
 Source and extracted offline snapshots were imported from local commit 548c404. Re-downloadable data/cache/http responses and generated TypeScript build metadata were excluded. Local phase history remains on the original machine; this repository starts with a snapshot import. Continue work in the cloud.
+
+
+## Cloud continuation outcome — 3 November 2026
+The original outstanding list above is retained as history. Production Linux build,
+typecheck, lint and 47 tests now pass. Mobile/desktop and offline main-route browser QA
+pass with no console/page errors; five inspected screenshots and a rerunnable script are
+in docs/qa/. The missing icon request was corrected. DECISIONS.md records three-filing
+reconciliation and promise matching limitations. README and WRITEUP are complete.
+Initial HTML is 3.81 MB uncompressed; payload splitting remains a priority. Live ingestion,
+provider integration and deployment remain unverified. The environment draft contains
+install/start instructions and awaits user review/save/publication in environment settings.
+Continue from the existing checkout; do not create a worktree unless requested.
