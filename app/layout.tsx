@@ -3,6 +3,7 @@ export const metadata = {
   title: "FINN — Signal over noise",
   description: "Your portfolio, distilled.",
   manifest: "/manifest.webmanifest",
+  icons: { icon: "/icon.svg", apple: "/icon-192.png" },
 };
 export const viewport = {
   width: "device-width",
