@@ -1,4 +1,7 @@
 "use client";
+import { DateWindow } from "./ui/date-window";
+import { Composer } from "./ask/composer";
+import { ExtraLenses } from "./ask/extra-lenses";
 import { useState, useEffect, useMemo, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { snapshot } from "../lib/data";
@@ -24,7 +27,7 @@ import { percent } from "../lib/format";
 import { credibility } from "../lib/math";
 function historyReplace(params: URLSearchParams) {
   window.history.replaceState(
-    null,
+    window.history.state,
     "",
     `/${params.size ? "?" + params.toString() : ""}`,
   );
@@ -137,6 +140,12 @@ export default function Desk({ data }: { data: Data }) {
     ticker: "",
   });
   const [researchReady, setResearchReady] = useState(false);
+  const [detail, setDetail] = useState<string | null>(null),
+    [chart, setChart] = useState<string | null>(null),
+    [coach, setCoach] = useState(false);
+  const undo = useRef<(() => void) | null>(null);
+  const longPress = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const pullStart = useRef(0);
   const taps = useRef(0);
   const touch = useRef(0);
   useEffect(() => {
@@ -150,6 +159,11 @@ export default function Desk({ data }: { data: Data }) {
         setInbox(saved.inbox || []);
         setRead(saved.read || []);
       }
+    } catch {}
+    try {
+      const prefs = JSON.parse(localStorage.getItem("finn-prefs") || "{}");
+      if (prefs.defaultWindow) setDays(Number(prefs.defaultWindow));
+      setCoach(!localStorage.getItem("finn-coach"));
     } catch {}
     const params = new URLSearchParams(location.search);
     const windowDays = Number(params.get("window"));
@@ -250,7 +264,7 @@ export default function Desk({ data }: { data: Data }) {
         ? (!from || f.ts_iso.slice(0, 10) >= from) &&
           (!to || f.ts_iso.slice(0, 10) <= to)
         : age <= days) &&
-      (category === "all" || f.category === category) &&
+      (category === "all" || category.split(",").includes(f.category)) &&
       (!company || f.ticker === company) &&
       !muted.includes(f.ticker + f.category)
     );
@@ -304,9 +318,12 @@ export default function Desk({ data }: { data: Data }) {
     return [...moves, ...filings].sort((a, b) => b.date.localeCompare(a.date));
   }, [data, rule, pins]);
   const current = research[ticker];
-  const action = (message: string) => {
+  const noticeTimer = useRef<number | null>(null);
+  const action = (message: string, revert?: () => void) => {
+    undo.current = revert || null;
+    if (noticeTimer.current) clearTimeout(noticeTimer.current);
     setNotice(message);
-    window.setTimeout(() => setNotice(""), 3200);
+    noticeTimer.current = window.setTimeout(() => setNotice(""), 5000);
   };
   async function ask(nextModule = module) {
     const raw = query.trim();
@@ -433,6 +450,19 @@ export default function Desk({ data }: { data: Data }) {
       </div>
     );
   }
+  function archiveAlert(id: string) {
+    setInbox((ids) => ids.filter((x) => x !== id));
+    action("Alert archived", () =>
+      setInbox((ids) => [...new Set([...ids, id])]),
+    );
+  }
+  function muteCompany(t: string, c: string) {
+    const key = t + c;
+    setMuted((m) => [...new Set([...m, key])]);
+    action(`Muted ${label(c)} for ${t}`, () =>
+      setMuted((m) => m.filter((x) => x !== key)),
+    );
+  }
   function card(f: (typeof all)[number]) {
     const r = research[f.ticker],
       open = expanded === f.id,
@@ -445,15 +475,25 @@ export default function Desk({ data }: { data: Data }) {
         className={`filing ${f.priority >= 70 ? "lead" : "compact-filing"}`}
         style={{ "--priority": `${f.priority}%` } as React.CSSProperties}
         key={`${f.ticker}-${f.id}`}
-        onTouchStart={(e) => (touch.current = e.touches[0].clientX)}
+        onContextMenu={(e) => {
+          e.preventDefault();
+          setDetail(f.id);
+        }}
+        onTouchStart={(e) => {
+          touch.current = e.touches[0].clientX;
+          longPress.current = setTimeout(() => setDetail(f.id), 550);
+        }}
+        onTouchMove={() => {
+          if (longPress.current) clearTimeout(longPress.current);
+        }}
         onTouchEnd={(e) => {
+          if (longPress.current) clearTimeout(longPress.current);
           const dx = e.changedTouches[0].clientX - touch.current;
           if (dx > 90) {
             setPins((p) => (p.includes(f.id) ? p : p.concat(f.id)));
             action("Filing pinned");
           } else if (dx < -90) {
-            setMuted((m) => m.concat(f.ticker + f.category));
-            action(`Muted ${label(f.category)} for ${f.ticker}`);
+            muteCompany(f.ticker, f.category);
           }
         }}
       >
@@ -470,7 +510,10 @@ export default function Desk({ data }: { data: Data }) {
         </div>
         <button
           className="headline-button"
-          onClick={() => setExpanded(open ? null : f.id)}
+          onClick={() => {
+            setExpanded(open ? null : f.id);
+            setDetail(f.id);
+          }}
           aria-expanded={open}
         >
           <h2 className="filing-title">{f.headline}</h2>
@@ -513,8 +556,7 @@ export default function Desk({ data }: { data: Data }) {
               </button>
               <button
                 onClick={() => {
-                  setMuted((m) => m.concat(f.ticker + f.category));
-                  action("Category muted for this company");
+                  muteCompany(f.ticker, f.category);
                 }}
               >
                 Mute category
@@ -590,7 +632,13 @@ export default function Desk({ data }: { data: Data }) {
       <div className="main-wrap">
         <header className="topbar">
           <TerminalTools
-            companies={data.portfolio}
+            filings={data.filings}
+            companies={[
+              ...data.portfolio,
+              ...Object.keys(research)
+                .filter((t) => !data.portfolio.some((p) => p.ticker === t))
+                .map((t) => ({ ticker: t, name: t })),
+            ]}
             select={(t) => {
               setTicker(t);
               setQuery(t);
@@ -607,7 +655,37 @@ export default function Desk({ data }: { data: Data }) {
             })}
           </span>
         </header>
-        <main>
+        <main
+          onTouchStart={(e) => {
+            if (window.scrollY === 0) pullStart.current = e.touches[0].clientY;
+          }}
+          onTouchEnd={(e) => {
+            if (
+              pullStart.current &&
+              e.changedTouches[0].clientY - pullStart.current > 110
+            ) {
+              action(
+                "Saved snapshot checked. Live refresh runs through the pipeline.",
+              );
+            }
+            pullStart.current = 0;
+          }}
+        >
+          {coach && tab === "Today" && (
+            <div className="coach" role="status">
+              Swipe right to pin. Left to quiet.
+              <button
+                onClick={() => {
+                  setCoach(false);
+                  try {
+                    localStorage.setItem("finn-coach", "seen");
+                  } catch {}
+                }}
+              >
+                Got it
+              </button>
+            </div>
+          )}
           {tab === "Today" && (
             <>
               <div className="page-heading">
@@ -671,6 +749,7 @@ export default function Desk({ data }: { data: Data }) {
                     }
                     onClick={() => {
                       setCompany(company === p.ticker ? "" : p.ticker);
+                      setChart(p.ticker);
                     }}
                   >
                     <span>{p.ticker}</span>
@@ -740,9 +819,19 @@ export default function Desk({ data }: { data: Data }) {
                   "earnings_call",
                 ].map((c) => (
                   <button
-                    className={category === c ? "selected" : ""}
+                    className={
+                      category.split(",").includes(c) ? "selected" : ""
+                    }
                     key={c}
-                    onClick={() => setCategory(c)}
+                    onClick={() =>
+                      setCategory((prev) => {
+                        const selected = prev === "all" ? [] : prev.split(",");
+                        const next = selected.includes(c)
+                          ? selected.filter((x) => x !== c)
+                          : [...selected, c];
+                        return next.join(",") || "all";
+                      })
+                    }
                   >
                     {label(c)}
                   </button>
@@ -901,6 +990,10 @@ export default function Desk({ data }: { data: Data }) {
                   "Financial snapshot",
                   "Guidance",
                   "Cash quality",
+                  "Trajectory",
+                  "Balance sheet",
+                  "Business",
+                  "Bull vs bear",
                 ].map((m) => (
                   <button
                     key={m}
@@ -930,6 +1023,25 @@ export default function Desk({ data }: { data: Data }) {
               {loading || !researchReady ? (
                 <div className="loading" role="status">
                   <div className="spinner" />
+                  <div
+                    className="reading-rail"
+                    role="progressbar"
+                    aria-label="Source retrieval"
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    aria-valuenow={loading.includes("Reading") ? 75 : 25}
+                  >
+                    <i
+                      style={{
+                        width: loading.includes("Reading") ? "75%" : "25%",
+                      }}
+                    />
+                  </div>
+                  <div className="reading-skeleton" aria-hidden="true">
+                    <i />
+                    <i />
+                    <i />
+                  </div>
                   <h2>{loading || "Opening saved source passages…"}</h2>
                   <p>
                     Retrieving disclosures. Checking the source, not guessing.
@@ -955,6 +1067,7 @@ export default function Desk({ data }: { data: Data }) {
                   showSources={setSources}
                 />
               )}
+              <Composer value={query} change={setQuery} send={() => ask()} />
               {history[ticker]?.length > 0 && (
                 <details className="session-history">
                   <summary>Research history · {ticker}</summary>
@@ -1096,6 +1209,16 @@ export default function Desk({ data }: { data: Data }) {
                       <small>last 30 calendar days of saved data</small>
                     </div>
                   </div>
+                  <button
+                    className="text-button"
+                    onClick={() => {
+                      const previous = inbox;
+                      setInbox([]);
+                      action("Inbox archived", () => setInbox(previous));
+                    }}
+                  >
+                    Archive inbox
+                  </button>
                   <div className="section-label">
                     <span>
                       INBOX · {inbox.filter((id) => !read.includes(id)).length}{" "}
@@ -1117,22 +1240,41 @@ export default function Desk({ data }: { data: Data }) {
                     .filter((a) => inbox.includes(a.id))
                     .slice(0, 8)
                     .map((a) => (
-                      <button
-                        className={`alert-row ${read.includes(a.id) ? "read" : ""}`}
+                      <div
+                        className="inbox-entry"
                         key={`${a.ticker}-${a.id}-${a.text}`}
-                        onClick={() => {
-                          setRead((r) => r.concat(a.id));
-                          setCompany(a.ticker);
-                          setDays(30);
-                          go("Today");
+                        onTouchStart={(e) => {
+                          touch.current = e.touches[0].clientX;
+                        }}
+                        onTouchEnd={(e) => {
+                          if (e.changedTouches[0].clientX - touch.current < -80)
+                            archiveAlert(a.id);
                         }}
                       >
-                        <b>{a.ticker}</b>
-                        <span>{a.text}</span>
-                        <small>
-                          {a.date} · {a.kind} ↗
-                        </small>
-                      </button>
+                        <button
+                          className={`alert-row ${read.includes(a.id) ? "read" : ""}`}
+                          onClick={() => {
+                            setRead((r) => [...new Set([...r, a.id])]);
+                            setCompany(a.ticker);
+                            setDays(30);
+                            const filing = all.find((f) => f.id === a.id);
+                            if (filing) setDetail(filing.id);
+                            go("Today");
+                          }}
+                        >
+                          <b>{a.ticker}</b>
+                          <span>{a.text}</span>
+                          <small>
+                            {a.date} · {a.kind} ↗
+                          </small>
+                        </button>
+                        <button
+                          aria-label={`Archive ${a.ticker} alert`}
+                          onClick={() => archiveAlert(a.id)}
+                        >
+                          Archive
+                        </button>
+                      </div>
                     ))}
                   <details className="preview-details">
                     <summary>Inspect matching sessions</summary>
@@ -1144,6 +1286,13 @@ export default function Desk({ data }: { data: Data }) {
                       <div
                         className="alert-row"
                         key={`${a.ticker}-${a.id}-${a.text}`}
+                        onContextMenu={(e) => {
+                          e.preventDefault();
+                          setInbox((ids) => ids.filter((id) => id !== a.id));
+                          undo.current = () =>
+                            setInbox((ids) => [...new Set([...ids, a.id])]);
+                          action("Alert archived");
+                        }}
                       >
                         <b>{a.ticker}</b>
                         <span>{a.text}</span>
@@ -1203,6 +1352,17 @@ export default function Desk({ data }: { data: Data }) {
             role="status"
           >
             {notice}
+            {undo.current && (
+              <button
+                onClick={() => {
+                  undo.current?.();
+                  undo.current = null;
+                  setNotice("Action undone");
+                }}
+              >
+                Undo
+              </button>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
@@ -1221,7 +1381,9 @@ export default function Desk({ data }: { data: Data }) {
                 {s.doc_id} · {s.page ? `PAGE ${s.page}` : "STANDARDIZED TABLE"}
               </div>
               <p className="muted">{s.period}</p>
-              <blockquote>{s.text}</blockquote>
+              <blockquote>
+                <mark>{s.text}</mark>
+              </blockquote>
               <button
                 className="text-button"
                 onClick={() => {
@@ -1246,8 +1408,91 @@ export default function Desk({ data }: { data: Data }) {
           ))}
         </Sheet>
       )}
+      {detail &&
+        (() => {
+          const f = all.find((x) => x.id === detail);
+          return f ? (
+            <Sheet
+              title={`${f.ticker} / ${label(f.category)}`}
+              close={() => setDetail(null)}
+            >
+              <h3>{f.headline}</h3>
+              <p>{f.body}</p>
+              {f.category === "results" &&
+                research[f.ticker] &&
+                results(research[f.ticker])}
+              <div className="actions">
+                <button
+                  onClick={() => {
+                    setPins((p) =>
+                      p.includes(f.id)
+                        ? p.filter((x) => x !== f.id)
+                        : [...p, f.id],
+                    );
+                    action("Pin updated");
+                  }}
+                >
+                  Toggle pin
+                </button>
+                <button
+                  onClick={() => {
+                    muteCompany(f.ticker, f.category);
+                    setDetail(null);
+                  }}
+                >
+                  Mute category
+                </button>
+                <button
+                  onClick={() => {
+                    setTicker(f.ticker);
+                    setDetail(null);
+                    go("Ask");
+                  }}
+                >
+                  Ask FINN
+                </button>
+              </div>
+              <a href={f.attachment_url} target="_blank" rel="noreferrer">
+                Original filing ↗
+              </a>
+            </Sheet>
+          ) : null;
+        })()}
+      {chart && (
+        <Sheet title={`${chart} / market record`} close={() => setChart(null)}>
+          <Spark
+            values={((data.prices[chart] as Bar[]) || [])
+              .slice(-20)
+              .map((b) => b.close)}
+          />
+          <p>Last 20 saved sessions · adjusted close</p>
+          <p className="footnote">
+            {signed(latest(chart)?.pct_change ?? null)} ·{" "}
+            {latest(chart)?.vol_ratio.toFixed(1)}× volume
+          </p>
+          <button
+            onClick={() => {
+              setTicker(chart);
+              setChart(null);
+              go("Ask");
+            }}
+          >
+            Research company ↗
+          </button>
+        </Sheet>
+      )}
       {custom && (
         <Sheet title="Choose your window." close={() => setCustom(false)}>
+          <DateWindow
+            dates={data.filings.map((f) => f.ts_iso.slice(0, 10))}
+            asOf={data.asOf}
+            from={from}
+            to={to}
+            change={(f, t) => {
+              setFrom(f);
+              setTo(t);
+            }}
+          />
           <label className="field">
             From
             <input
@@ -1368,6 +1613,7 @@ function ResearchCards({
           </p>
         </section>
       )}
+      <ExtraLenses r={r} lens={module} source={showSources} />
       {module === "Numbers vs narrative" && (
         <>
           <div className="credibility-card">
@@ -1389,6 +1635,36 @@ function ResearchCards({
               ),
             )}
           />
+          <div
+            className="cohort-trend"
+            role="img"
+            aria-label="Scores by statement period, excluding pending claims"
+          >
+            {[...new Set(promises.map((p) => p.sources[0].period))]
+              .filter((period) =>
+                promises.some(
+                  (p) =>
+                    p.sources[0].period === period &&
+                    ["met", "missed", "partially"].includes(p.verdict),
+                ),
+              )
+              .slice(0, 4)
+              .reverse()
+              .map((period) => {
+                const value = credibility(
+                  promises
+                    .filter((p) => p.sources[0].period === period)
+                    .map((p) => p.verdict),
+                );
+                return (
+                  <div key={period}>
+                    <i style={{ height: `${value ?? 0}%` }} />
+                    <b>{value ?? "—"}</b>
+                    <small>{period.split(" Transcript")[0]}</small>
+                  </div>
+                );
+              })}
+          </div>
           <div className="evidence-note">
             Verdicts compare the same metric and currency basis across completed
             periods. Pending targets are excluded from the score; every
@@ -1403,6 +1679,13 @@ function ResearchCards({
                 className="promise-card"
                 key={i}
               >
+                {(i === 0 ||
+                  promises[i - 1].sources[0].period !==
+                    p.sources[0].period) && (
+                  <div className="quarter-label">
+                    {p.sources[0].period.split(" Transcript")[0]}
+                  </div>
+                )}
                 <div className="card-meta">
                   <span className="category">{p.metric}</span>
                   <span className="muted">
@@ -1639,6 +1922,15 @@ function ManagementCard({
   return (
     <section className="management">
       <div className="eyebrow">FROM THE FILING</div>
+      <div className="profile-initials" aria-hidden="true">
+        {name
+          ? name
+              .split(" ")
+              .map((n) => n[0])
+              .slice(0, 2)
+              .join("")
+          : "—"}
+      </div>
       <h3>{name || "Management disclosure"}</h3>
       {role && <p>{role}</p>}
       <div className="management-facts">

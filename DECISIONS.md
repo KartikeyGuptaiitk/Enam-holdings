@@ -97,3 +97,12 @@ Final UI validation reached Lighthouse mobile 97 performance / 100 accessibility
 committed; exact passages load after first paint through a precached endpoint. This
 preserves offline research while reducing initial HTML. See docs/UI_REVIEW.md for
 all measured results and the explicit interaction cuts; not every wishlist item shipped.
+
+
+Completion follow-up: implemented snap/history-aware portal sheets, filing and market
+record sheets, one-time onboarding, multi-category filters, histogram range controls,
+undo/archive, fuzzy filing/company search and recents, persisted default window, speech
+composer, statement cohort trend, source-grounded additional lenses and an OG image.
+Additional lenses deliberately report unavailable structures rather than inventing a
+segment allocation or balance-sheet waterfall. The desk remains a deterministic snapshot
+product; the new UI does not imply live provider orchestration.

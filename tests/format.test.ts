@@ -35,3 +35,9 @@ test("desk view preserves financial research and only removes unused filing page
     assert.deepEqual(pages, original.filingPassages[id]);
   }
 });
+import { matches } from "../lib/view/search";
+test("command search tolerates missing letters while preserving order", () => {
+  assert.equal(matches("infs", "Infosys"), true);
+  assert.equal(matches("xyz", "Infosys"), false);
+  assert.equal(matches("", "INFY"), true);
+});

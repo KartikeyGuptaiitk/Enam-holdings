@@ -44,23 +44,41 @@ all full research data remains available through the precached snapshot endpoint
 Bundle report: 173 kB first-load JavaScript. WOFF2 fonts total about 219 kB versus
 1.2 MB TTFs. No third-party chart or icon runtime was added.
 
-## What remains below the complete wish list
-This is a substantial UI pass, not every interaction in the brief. Feed details still
-expand inline rather than shared-element detail sheets. Existing swipe pin/mute actions
-have button alternatives, but no long-press menu, undo toast, rubber-band refresh or
-one-time swipe coach mark. Sheets use spring drag/Escape/focus containment; snap points
-and history/back-button dismissal remain absent. The calendar still uses date inputs,
-not a dual-handle histogram. Filters remain single category and company; Today window,
-category and company are URL-synced. Search is company substring search, not global fuzzy
-filing search with recents. The short guide is available in settings, not auto-onboarding.
-There is no voice composer, credibility trend, quarter-grouped ledger, true streaming
-or advanced unsupported research lenses. Evidence-free rating/dividend/biography values
-were not invented; those layouts retain the existing disclosed content. Holdings have
-sparklines/weight bars and volume readouts, not a separate company chart sheet. Settings
-has theme/density/haptics/reset but no default-window preference. The original Desk
-component still owns much feature state; extraction into primitives is partial. OG image
-and new splash art were not added. Hardware haptics, full manual screen-reader testing
-and every gesture under reduced motion are not certified by the automated checks.
+## Completion pass
+The follow-up adds body-level portal sheets with peek/half/full controls, drag snapping,
+Back/Escape dismissal and nested history ownership. Filing details and company market
+records now open in sheets. Long-press opens filing actions; pin/mute retain explicit
+buttons. Mute and inbox archive expose undo. Alert rows support swipe archive and a
+per-row Archive button. A one-time skippable guide and swipe hint introduce the desk.
+Settings persist a default window; preference initialization is guarded against overwrite.
+The custom window now includes a 30-day filing histogram and two constrained range
+controls, alongside accessible date inputs. Category selection supports multiple chips.
+Command search includes ad-hoc companies, fuzzy subsequence matching, filing headlines
+and recent companies. Ask adds a follow-up composer and opt-in speech recognition where
+the browser supplies it; dictation is reviewed before sending. Additional lenses show
+quarterly trajectory, disclosed balance-sheet fields, exact business passages and a
+mechanical two-sided comparison of reported YoY changes. They cite saved sources.
+Statement cohorts have score bars and period labels. Reading stages have a progress
+rail and skeletons. Management disclosures gain initials; source passages are highlighted.
+An Open Graph image is generated locally. No paid service or API key is needed.
+
+The completed interaction acceptance covers first-visit skip, coach dismissal, sheet
+snap controls and browser Back, date sliders, fuzzy WIPRO selection, all four additional
+lenses, persisted settings, inbox undo, offline reload and exact WIPRO source drawers.
+During QA, fixed stacking-context interference by portalling sheets, corrected a
+full-height mobile rail intercepting pointer events, and guarded preference hydration.
+
+### Evidence boundaries
+The additional lenses do not invent missing segment splits, biographies or leverage
+waterfalls. Trajectory currently shows the saved quarterly series; long-term CAGR is
+withheld without a verified annual-period match. Bull/bear is explicitly mechanical
+comparison, not generated investment advice. Speech and vibration depend on hardware,
+browser support and user permission; automated tests do not certify microphones.
+The guide explains gestures using the real desk rather than running a separate animated
+simulation. Pull-to-refresh checks the saved snapshot; it does not claim a live fetch.
+Research progress describes source retrieval, not streaming LLM reasoning. Broad manual
+screen-reader certification and field performance measurements remain outside these lab
+checks. These limits preserve the original mission's grounding requirements.
 
 ## Reproduce
 Use the README build/start instructions. QA scripts use port 3002:
@@ -75,4 +93,15 @@ node docs/qa/ui-smoke.cjs
 The custom browser path points to the installed system FFmpeg symlink used by Playwright
 video recording. Use Playwright's standard FFmpeg installation on another machine.
 No deployment credentials are configured. Deployment and attaching the chat export
-remain owner actions. Nothing was pushed to GitHub during this UI pass.
+remain owner actions. The follow-up is committed and pushed to GitHub main after acceptance checks.
+
+## Completed-build acceptance
+Production round r6 passes the four viewport sizes in both themes with no horizontal
+overflow or page exceptions. The saved interaction acceptance script passes, including
+first-visit onboarding, sheet Back/snaps, range controls, fuzzy WIPRO lookup, additional
+lenses, default-window settings, archive/undo and offline exact source drawers.
+The completed build passes 51 unit tests, strict typecheck, lint and production build.
+Latest Lighthouse (including first-visit onboarding): **93 performance, 96 accessibility,
+100 best practices, LCP 1.4 seconds**. See lighthouse-completed.json. Earlier 97/100/100
+results above refer to the preceding build. Browser/hardware support boundaries remain
+as documented. Source-grounded missing-data states are intentional.

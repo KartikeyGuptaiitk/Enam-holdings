@@ -1,27 +1,42 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
+import { matches } from "../../lib/view/search";
 import { Sheet } from "./sheet";
 export function TerminalTools({
   companies,
   select,
+  filings = [],
 }: {
   companies: { ticker: string; name: string }[];
   select: (ticker: string) => void;
+  filings?: { ticker: string; headline: string; id: string }[];
 }) {
   const [panel, setPanel] = useState(""),
     [query, setQuery] = useState(""),
     [theme, setTheme] = useState("system"),
     [density, setDensity] = useState("comfortable"),
     [haptics, setHaptics] = useState(false),
-    [intro, setIntro] = useState(0);
-  const close = useCallback(() => setPanel(""), []);
+    [intro, setIntro] = useState(0),
+    [defaultWindow, setDefaultWindow] = useState("1"),
+    [recents, setRecents] = useState<string[]>([]);
+  const [prefsLoaded, setPrefsLoaded] = useState(false);
+  const close = useCallback(() => {
+    setPanel("");
+    try {
+      localStorage.setItem("finn-intro", "seen");
+    } catch {}
+  }, []);
   useEffect(() => {
     try {
       const p = JSON.parse(localStorage.getItem("finn-prefs") || "{}");
       setTheme(p.theme || "system");
       setDensity(p.density || "comfortable");
       setHaptics(!!p.haptics);
+      setDefaultWindow(p.defaultWindow || "1");
+      setRecents(JSON.parse(localStorage.getItem("finn-recents") || "[]"));
+      if (!localStorage.getItem("finn-intro")) setPanel("intro");
     } catch {}
+    setPrefsLoaded(true);
     const key = (e: KeyboardEvent) => {
       if (
         (e.key === "k" && (e.metaKey || e.ctrlKey)) ||
@@ -36,15 +51,16 @@ export function TerminalTools({
     return () => window.removeEventListener("keydown", key);
   }, []);
   useEffect(() => {
+    if (!prefsLoaded) return;
     document.documentElement.dataset.theme = theme;
     document.documentElement.dataset.density = density;
     try {
       localStorage.setItem(
         "finn-prefs",
-        JSON.stringify({ theme, density, haptics }),
+        JSON.stringify({ theme, density, haptics, defaultWindow }),
       );
     } catch {}
-  }, [theme, density, haptics]);
+  }, [theme, density, haptics, defaultWindow, prefsLoaded]);
   useEffect(() => {
     if (!haptics) return;
     const tick = (e: MouseEvent) => {
@@ -96,18 +112,39 @@ export function TerminalTools({
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
               />
+              <div className="suggestions">
+                {!query &&
+                  recents.map((t) => (
+                    <button
+                      key={t}
+                      onClick={() => {
+                        select(t);
+                        close();
+                      }}
+                    >
+                      {t}
+                    </button>
+                  ))}
+              </div>
               <div className="command-results">
                 {companies
-                  .filter((c) =>
-                    (c.ticker + " " + c.name)
-                      .toLowerCase()
-                      .includes(query.toLowerCase()),
-                  )
+                  .filter((c) => matches(query, c.ticker + " " + c.name))
                   .slice(0, 12)
                   .map((c) => (
                     <button
                       key={c.ticker}
                       onClick={() => {
+                        const next = [
+                          c.ticker,
+                          ...recents.filter((t) => t !== c.ticker),
+                        ].slice(0, 6);
+                        setRecents(next);
+                        try {
+                          localStorage.setItem(
+                            "finn-recents",
+                            JSON.stringify(next),
+                          );
+                        } catch {}
                         select(c.ticker);
                         close();
                       }}
@@ -117,10 +154,37 @@ export function TerminalTools({
                       <span>↗</span>
                     </button>
                   ))}
+                {query &&
+                  filings
+                    .filter((f) => matches(query, f.ticker + " " + f.headline))
+                    .slice(0, 6)
+                    .map((f, i) => (
+                      <button
+                        key={f.id + String(i)}
+                        onClick={() => {
+                          select(f.ticker);
+                          close();
+                        }}
+                      >
+                        <b>{f.ticker}</b>
+                        <span>{f.headline}</span>
+                      </button>
+                    ))}
+                <button
+                  onClick={() => {
+                    select(query.toUpperCase().split(" ")[0] || "INFY");
+                    close();
+                  }}
+                >
+                  Research {query || "a company"} ↗
+                </button>
               </div>
             </>
           ) : panel === "intro" ? (
             <>
+              <button className="text-button" onClick={close}>
+                Skip introduction
+              </button>
               <div className="intro-number">0{intro + 1} / 03</div>
               <h3>
                 {
@@ -158,6 +222,19 @@ export function TerminalTools({
                   <option value="system">System</option>
                   <option value="ink">Ink</option>
                   <option value="paper">Paper</option>
+                </select>
+              </label>
+              <label className="field">
+                Default digest window
+                <select
+                  value={defaultWindow}
+                  onChange={(e) => setDefaultWindow(e.target.value)}
+                >
+                  {[1, 3, 7, 30].map((d) => (
+                    <option key={d} value={d}>
+                      {d === 1 ? "24 hours" : `${d} days`}
+                    </option>
+                  ))}
                 </select>
               </label>
               <label className="field">

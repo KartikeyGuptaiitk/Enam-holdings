@@ -8,7 +8,10 @@ alerts and primary-source research. The committed snapshot runs without API keys
 Ink and paper editions use locally hosted Newsreader, Inter Tight and JetBrains Mono.
 Try these first: tap a portfolio heat tile to filter Today; change Watch thresholds and
 replay the inbox; open a statement's exact sources in Ask. Press `/` or Ctrl/Cmd+K to
-search companies. Settings includes theme, density, optional haptics and a short guide.
+search companies. Settings includes theme, density, default window, optional haptics and a short guide.
+Filing sheets support snap controls and Back; Watch supports archive/undo. Additional
+research lenses show saved trajectory, balance-sheet fields, business passages and
+mechanical bull/bear comparisons. Voice follow-ups appear where the browser supports them.
 
 [Today, ink](docs/ui-after/r5-today-ink-390x844.png) ·
 [Today, paper](docs/ui-after/r5-today-paper-390x844.png) ·
@@ -18,7 +21,7 @@ search companies. Settings includes theme, density, optional haptics and a short
 
 Visual rounds, viewport matrices and performance reports are under `docs/ui-after/`;
 recorded browser sessions are under `docs/demo/`. See `docs/UI_REVIEW.md` for measured
-results and the interaction requirements that remain incomplete.
+results and the source-availability and browser-support boundaries.
 
 ## Run
 
