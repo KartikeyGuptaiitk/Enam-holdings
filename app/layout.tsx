@@ -1,3 +1,7 @@
+import localFont from "next/font/local";
+const newsreader=localFont({src:"./fonts/newsreader.ttf",variable:"--font-editorial",display:"swap"});
+const grotesk=localFont({src:"./fonts/intertight.ttf",variable:"--font-ui",display:"swap"});
+const mono=localFont({src:"./fonts/jetbrainsmono.ttf",variable:"--font-numbers",display:"swap"});
 import "./globals.css";
 export const metadata = {
   title: "FINN — Signal over noise",
@@ -12,7 +16,7 @@ export const viewport = {
 };
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${newsreader.variable} ${grotesk.variable} ${mono.variable}`}>
       <body>{children}</body>
     </html>
   );

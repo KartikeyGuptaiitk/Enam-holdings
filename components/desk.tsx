@@ -13,6 +13,12 @@ import {
   cashRows,
   resultsSummary,
 } from "../lib/research";
+import { Sheet } from "./ui/sheet";
+import { TerminalTools } from "./ui/terminal-tools";
+import { Pulse } from "./today/pulse";
+import { Timeline } from "./watch/timeline";
+import { Ring } from "./ask/ring";
+import { percent } from "../lib/format";
 import { credibility } from "../lib/math";
 type Data = ReturnType<typeof snapshot>;
 type Bar = {
@@ -25,8 +31,7 @@ type Bar = {
 const fmt = (n: number) =>
   new Intl.NumberFormat("en-IN", { maximumFractionDigits: 1 }).format(n);
 const label = (s: string) => s.replaceAll("_", " ");
-const signed = (n: number | null) =>
-  n === null ? "—" : `${n >= 0 ? "+" : ""}${n.toFixed(1)}%`;
+const signed = percent;
 function Icon({ name }: { name: string }) {
   return (
     <span aria-hidden="true" className="icon">
@@ -137,11 +142,12 @@ export default function Desk({ data }: { data: Data }) {
     };
   }, []);
   useEffect(() => {
-    if (ready)
+    if (ready) try {
       localStorage.setItem(
         "finn-state",
         JSON.stringify({ rule, pins, muted, history, inbox, read }),
       );
+    } catch {}
   }, [ready, rule, pins, muted, history, inbox, read]);
   const go = (t: string) => {
     setTab(t);
@@ -350,7 +356,7 @@ export default function Desk({ data }: { data: Data }) {
             </span>
           </div>
         )}
-        <Spark values={s.rows[0].values.slice(-8)} color="#c9dc9c" />
+        <Spark values={s.rows[0].values.slice(-8)} color="var(--accent)" />
         <p className="footnote">
           Screener standardized financials · not fully reconciled to filing.
           Operating profit is not labelled EBITDA. Same-quarter last year
@@ -368,8 +374,9 @@ export default function Desk({ data }: { data: Data }) {
         layout
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
-        className={`filing ${f.priority >= 70 ? "lead" : ""}`}
-        key={f.id}
+        className={`filing ${f.priority >= 70 ? "lead" : "compact-filing"}`}
+        style={{"--priority":`${f.priority}%`} as React.CSSProperties}
+        key={`${f.ticker}-${f.id}`}
         onTouchStart={(e) => (touch.current = e.touches[0].clientX)}
         onTouchEnd={(e) => {
           const dx = e.changedTouches[0].clientX - touch.current;
@@ -406,7 +413,7 @@ export default function Desk({ data }: { data: Data }) {
             ? f.body.replace(/\s+/g, " ").split(" ").slice(0, 18).join(" ")
             : "New exchange disclosure; review the original before making an investment decision."}
         </p>
-        {f.category === "results" && r && results(r, true)}
+        {f.category === "results" && r && (open || f.priority >=70) && results(r, true)}
         {f.category === "management_change" && passages.length > 0 && (
           <ManagementCard passages={passages} showSources={setSources} />
         )}
@@ -511,6 +518,7 @@ export default function Desk({ data }: { data: Data }) {
       </aside>
       <div className="main-wrap">
         <header className="topbar">
+<TerminalTools companies={data.portfolio} select={(t)=>{setTicker(t);setQuery(t);go("Ask")}}/>
           <span className="edition">PRIVATE MARKETS OF ATTENTION</span>
           <span className="demo-badge">SAVED DATA</span>
           <span className="date">
@@ -562,10 +570,15 @@ export default function Desk({ data }: { data: Data }) {
                   IST
                 </span>
               </div>
-              <div className="market-strip">
-                {movers.slice(0, 5).map((p) => (
+              <Pulse count={must.length+worth.length} ticker={shown[0]?.ticker}/>
+<div className="heat-label eyebrow">PORTFOLIO TEMPERATURE <span>DAY CHANGE / TAP TO FILTER</span></div>
+<div className="market-strip heat-grid">
+                {movers.map((p) => (
                   <button
                     key={p.ticker}
+                    aria-pressed={company===p.ticker}
+                    data-direction={p.bar!.pct_change>=0?"up":"down"}
+                    style={{"--heat":Math.min(.30,.05+Math.abs(p.bar!.pct_change)*.04)} as React.CSSProperties}
                     onClick={() => {
                       setCompany(company === p.ticker ? "" : p.ticker);
                     }}
@@ -582,7 +595,7 @@ export default function Desk({ data }: { data: Data }) {
                       values={(data.prices[p.ticker] as Bar[])
                         .slice(-20)
                         .map((x) => x.close)}
-                      color={p.bar!.pct_change >= 0 ? "#a2c6ad" : "#dd9e8b"}
+                      color={p.bar!.pct_change >= 0 ? "var(--green)" : "var(--red)"}
                     />
                   </button>
                 ))}
@@ -787,7 +800,8 @@ export default function Desk({ data }: { data: Data }) {
                   ),
                 )}
               </div>
-              <div className="chips module-chips">
+              <div className="lens-label eyebrow">CHOOSE A LENS <span>Saved evidence · no model calls</span></div>
+<div className="chips module-chips">
                 {[
                   "Numbers vs narrative",
                   "Financial snapshot",
@@ -797,6 +811,7 @@ export default function Desk({ data }: { data: Data }) {
                   <button
                     key={m}
                     className={module === m ? "selected" : ""}
+                    title={({"Numbers vs narrative":"Explicit targets beside subsequent disclosures","Financial snapshot":"Quarterly numbers, margins and change","Guidance":"Management’s numeric forward statements","Cash quality":"Cash generation beside reported profit"} as Record<string,string>)[m]}
                     onClick={() => {
                       setModule(m);
                       setQuery("");
@@ -964,7 +979,8 @@ export default function Desk({ data }: { data: Data }) {
                   </p>
                 </section>
                 <section>
-                  <div className="preview-stat">
+                  <Timeline dates={alertItems.map(x=>x.date)} asOf={data.asOf}/>
+<div className="preview-stat">
                     <b>{alertItems.length}</b>
                     <div>
                       alerts would have fired
@@ -994,7 +1010,7 @@ export default function Desk({ data }: { data: Data }) {
                     .map((a) => (
                       <button
                         className={`alert-row ${read.includes(a.id) ? "read" : ""}`}
-                        key={a.id}
+                        key={`${a.ticker}-${a.id}-${a.text}`}
                         onClick={() => {
                           setRead((r) => r.concat(a.id));
                           setCompany(a.ticker);
@@ -1009,12 +1025,12 @@ export default function Desk({ data }: { data: Data }) {
                         </small>
                       </button>
                     ))}
-                  <div className="section-label">
+                  <details className="preview-details"><summary>Inspect matching sessions</summary><div className="section-label">
                     <span>LIVE RULE PREVIEW</span>
                     <span>Most recent first</span>
                   </div>
                   {alertItems.slice(0, 15).map((a) => (
-                    <div className="alert-row" key={a.id}>
+                    <div className="alert-row" key={`${a.ticker}-${a.id}-${a.text}`}>
                       <b>{a.ticker}</b>
                       <span>{a.text}</span>
                       <small>
@@ -1022,6 +1038,7 @@ export default function Desk({ data }: { data: Data }) {
                       </small>
                     </div>
                   ))}
+                  </details>
                 </section>
               </div>
             </>
@@ -1061,24 +1078,8 @@ export default function Desk({ data }: { data: Data }) {
         )}
       </AnimatePresence>
       {sources && (
-        <div className="sheet-backdrop" onClick={() => setSources(null)}>
-          <section
-            className="sheet"
-            role="dialog"
-            aria-modal="true"
-            aria-label="Source passages"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="sheet-handle" />
-            <div className="sheet-header">
-              <h2>Follow the evidence.</h2>
-              <button
-                aria-label="Close sources"
-                onClick={() => setSources(null)}
-              >
-                ×
-              </button>
-            </div>
+        <Sheet title="Source passages" close={()=>setSources(null)}>
+          <button aria-label="Close sources" className="text-button" onClick={()=>setSources(null)}>Back to research</button>
             {sources.map((s, i) => (
               <article className="source" key={i}>
                 <div className="eyebrow">
@@ -1087,6 +1088,7 @@ export default function Desk({ data }: { data: Data }) {
                 </div>
                 <p className="muted">{s.period}</p>
                 <blockquote>{s.text}</blockquote>
+<button className="text-button" onClick={()=>{navigator.clipboard?.writeText(`${s.doc_id} · ${s.period} · p.${s.page}: ${s.text}`).then(()=>action("Citation copied")).catch(()=>action("Copy unavailable in this browser"))}}>Copy citation ↗</button>
                 <a
                   target="_blank"
                   rel="noreferrer"
@@ -1096,8 +1098,7 @@ export default function Desk({ data }: { data: Data }) {
                 </a>
               </article>
             ))}
-          </section>
-        </div>
+        </Sheet>
       )}
       {custom && (
         <div className="sheet-backdrop">
@@ -1240,16 +1241,17 @@ function ResearchCards({
         <>
           <div className="credibility-card">
             <div>
-              <div className="eyebrow">MANAGEMENT’S TRACK RECORD</div>
+              <div className="eyebrow">THE STATEMENT LEDGER</div>
               <h2>Promises need a period.</h2>
               <p>Explicit forward statements, with the evidence kept close.</p>
             </div>
-            <div className="credibility-score">
+            <div className="credibility-score" style={{display:"none"}}>
               {score ?? "—"}
               <small>{score === null ? "Not scored" : "/ 100"}</small>
             </div>
           </div>
-          <div className="evidence-note">
+          <Ring score={score} counts={Object.fromEntries(["met","partially","missed","unclear","not_yet_due"].map(v=>[v,promises.filter(p=>p.verdict===v).length]))}/>
+<div className="evidence-note">
             Verdicts compare the same metric and currency basis across completed
             periods. Pending targets are excluded from the score; every
             comparison opens both passages.
@@ -1268,7 +1270,7 @@ function ResearchCards({
                   <span className="muted">
                     {p.sources[0].period.split(" Transcript")[0]}
                   </span>
-                  <span className="verdict">{label(p.verdict)}</span>
+                  <span className={`verdict verdict-${p.verdict}`}>{label(p.verdict)}</span>
                 </div>
                 <h3>{p.statement}</h3>
                 <div className="promise-compare">
