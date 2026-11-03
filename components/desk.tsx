@@ -539,7 +539,7 @@ export default function Desk({ data }: { data: Data }) {
             </p>
             <p className="footnote">
               Priority {f.priority}/100 · {f.source} ·{" "}
-              {new Date(f.ts_iso).toLocaleString("en-IN")}
+              {new Date(f.ts_iso).toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}
             </p>
             <div className="actions">
               <button
@@ -649,6 +649,7 @@ export default function Desk({ data }: { data: Data }) {
           <span className="demo-badge">SAVED DATA</span>
           <span className="date">
             {new Date(data.asOf).toLocaleDateString("en-IN", {
+              timeZone: "Asia/Kolkata",
               day: "numeric",
               month: "short",
               year: "numeric",
@@ -720,6 +721,7 @@ export default function Desk({ data }: { data: Data }) {
                 <span className="muted">
                   18 holdings · as of{" "}
                   {new Date(data.asOf).toLocaleTimeString("en-IN", {
+                    timeZone: "Asia/Kolkata",
                     hour: "2-digit",
                     minute: "2-digit",
                   })}{" "}
