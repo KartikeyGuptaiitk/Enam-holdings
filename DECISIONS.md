@@ -72,3 +72,22 @@ and additional network domains may be required. No deployment credentials are pr
 Initial HTML includes all compact company research and filing passages: this favors
 reliable offline use over first-load size. Raw documents remain server-side; future work
 should split company payloads and precache a deliberately bounded offline collection.
+
+## Desk Terminal UI pass
+The signature accent is electric lime (#C6F432): it marks a selected control or a
+signal worth attention. Green/red remain reserved for market direction. Ink and
+paper share semantic CSS tokens; paper uses a darker olive accent for legibility.
+Newsreader, Inter Tight and JetBrains Mono are licensed, self-hosted via next/font/local
+so the snapshot does not fetch fonts from a remote service. Licenses are included.
+The portfolio temperature grid encodes signed daily change with restrained intensity.
+Equal tiles preserve ticker legibility rather than suggesting precision through a tiny
+weight treemap. Today rows are compact; financial tables reveal on expansion rather
+than repeating four times before the next company. Watch puts the inbox and session
+preview first, with the long matching list collapsed. Ask uses a ledger and labels
+its ring SELECTED CLAIMS to avoid implying broad management credibility.
+New sources/search/settings sheets support keyboard containment, Escape, drag dismissal
+and focus restoration. Haptics are opt-in. Default state remains quiet and demoable.
+This pass deliberately does not fabricate biographies, ratings, dividend fields or
+advanced research lenses where structured evidence is absent. Streaming and advanced
+charts remain limited to supported modules. Performance budgets and the full original
+interaction wish list must be reported as unverified where not measured or implemented.

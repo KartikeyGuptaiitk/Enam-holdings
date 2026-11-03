@@ -16,10 +16,13 @@ import {
 import { Sheet } from "./ui/sheet";
 import { TerminalTools } from "./ui/terminal-tools";
 import { Pulse } from "./today/pulse";
+import { Holdings } from "./watch/holdings";
 import { Timeline } from "./watch/timeline";
+import { Gap } from "./ask/gap";
 import { Ring } from "./ask/ring";
 import { percent } from "../lib/format";
 import { credibility } from "../lib/math";
+function historyReplace(params:URLSearchParams){window.history.replaceState(null,"",`/${params.size?"?"+params.toString():""}`)}
 type Data = ReturnType<typeof snapshot>;
 type Bar = {
   date: string;
@@ -32,19 +35,7 @@ const fmt = (n: number) =>
   new Intl.NumberFormat("en-IN", { maximumFractionDigits: 1 }).format(n);
 const label = (s: string) => s.replaceAll("_", " ");
 const signed = percent;
-function Icon({ name }: { name: string }) {
-  return (
-    <span aria-hidden="true" className="icon">
-      {name === "Today"
-        ? "◫"
-        : name === "Ask"
-          ? "⌕"
-          : name === "Watch"
-            ? "◉"
-            : "↗"}
-    </span>
-  );
-}
+function Icon({name}:{name:string}) {return <svg className="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">{name==="Today"?<><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M8 4v16m4-11h6m-6 4h6"/></>:name==="Watch"?<><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></>:<><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></>}</svg>}
 export function Spark({
   values,
   color = "currentColor",
@@ -123,6 +114,11 @@ export default function Desk({ data }: { data: Data }) {
         setRead(saved.read || []);
       }
     } catch {}
+    const params=new URLSearchParams(location.search);
+    const windowDays=Number(params.get('window'));
+    if([1,3,7,30].includes(windowDays))setDays(windowDays);
+    if(params.get('company'))setCompany(params.get('company')!);
+    if(params.get('category'))setCategory(params.get('category')!);
     setReady(true);
     setOnline(navigator.onLine);
     const on = () => setOnline(navigator.onLine);
@@ -149,6 +145,7 @@ export default function Desk({ data }: { data: Data }) {
       );
     } catch {}
   }, [ready, rule, pins, muted, history, inbox, read]);
+  useEffect(()=>{if(!ready||tab!=="Today")return;const params=new URLSearchParams();if(days!==1)params.set('window',String(days));if(company)params.set('company',company);if(category!=="all")params.set('category',category);historyReplace(params);},[ready,tab,days,company,category]);
   const go = (t: string) => {
     setTab(t);
     window.history.replaceState(
@@ -324,7 +321,7 @@ export default function Desk({ data }: { data: Data }) {
           <tbody>
             {s.rows.slice(0, compact ? 4 : 5).map((row) => (
               <tr key={row.name}>
-                <td>{row.name}</td>
+                <td>{row.name}<Spark values={row.values.slice(-8)} color="var(--muted)"/></td>
                 <td>
                   <button
                     className="number-link"
@@ -1041,6 +1038,7 @@ export default function Desk({ data }: { data: Data }) {
                   </details>
                 </section>
               </div>
+              <Holdings items={movers.map(p=>({ticker:p.ticker,weight_pct:p.weight_pct,move:p.bar!.pct_change,volume:p.bar!.vol_ratio,values:(data.prices[p.ticker] as Bar[]).slice(-20).map(x=>x.close)}))} select={t=>{setTicker(t);go("Ask")}}/>
             </>
           )}
           <footer className="page-footer">
@@ -1287,6 +1285,7 @@ function ResearchCards({
                     </b>
                   </div>
                 </div>
+                <Gap target={p.target || ""} delivered={p.delivered}/>
                 <button
                   className="source-button"
                   onClick={() => showSources(p.sources)}

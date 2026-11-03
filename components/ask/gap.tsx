@@ -1,0 +1,2 @@
+import {gapScale} from '../../lib/view/gap';
+export function Gap({target,delivered}:{target:string;delivered:string}){const scale=gapScale(target,delivered);return scale?<div className="gap-chart" role="img" aria-label={`Target range ${target}; actual ${scale.value} percent`}><span style={{left:`${scale.start}%`,width:`${scale.width}%`}}/><i style={{left:`${scale.actual}%`}}/><small>GUIDED RANGE <b>│ ACTUAL</b></small></div>:null}
