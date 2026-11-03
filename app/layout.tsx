@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
-const newsreader=localFont({src:"./fonts/newsreader.ttf",variable:"--font-editorial",display:"swap"});
-const grotesk=localFont({src:"./fonts/intertight.ttf",variable:"--font-ui",display:"swap"});
-const mono=localFont({src:"./fonts/jetbrainsmono.ttf",variable:"--font-numbers",display:"swap"});
+const newsreader=localFont({src:"./fonts/newsreader.woff2",variable:"--font-editorial",display:"swap"});
+const grotesk=localFont({src:"./fonts/intertight.woff2",variable:"--font-ui",display:"swap"});
+const mono=localFont({src:"./fonts/jetbrainsmono.woff2",variable:"--font-numbers",display:"swap"});
 import "./globals.css";
 export const metadata = {
   title: "FINN — Signal over noise",

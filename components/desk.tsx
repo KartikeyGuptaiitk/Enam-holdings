@@ -146,6 +146,7 @@ export default function Desk({ data }: { data: Data }) {
     } catch {}
   }, [ready, rule, pins, muted, history, inbox, read]);
   useEffect(()=>{if(!ready||tab!=="Today")return;const params=new URLSearchParams();if(days!==1)params.set('window',String(days));if(company)params.set('company',company);if(category!=="all")params.set('category',category);historyReplace(params);},[ready,tab,days,company,category]);
+  useEffect(()=>{let active=true;fetch('/api/desk').then(r=>{if(!r.ok)throw Error('Snapshot unavailable');return r.json()}).then(json=>{const saved=Object.fromEntries(Object.entries(json).map(([t,r])=>[t,ResearchSchema.parse(r)]));if(active)setResearch(current=>({...current,...saved}))}).catch(()=>{});return()=>{active=false}},[]);
   const go = (t: string) => {
     setTab(t);
     window.history.replaceState(
@@ -402,7 +403,7 @@ export default function Desk({ data }: { data: Data }) {
           onClick={() => setExpanded(open ? null : f.id)}
           aria-expanded={open}
         >
-          <h3>{f.headline}</h3>
+          <h2 className="filing-title">{f.headline}</h2>
           <span>{open ? "−" : "+"}</span>
         </button>
         <p className="why">

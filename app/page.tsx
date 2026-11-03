@@ -1,6 +1,6 @@
 import Desk from "../components/desk";
-import { snapshot } from "../lib/data";
+import { deskSnapshot } from "../lib/view/desk";
 export const dynamic = "force-dynamic";
 export default function Page() {
-  return <Desk data={snapshot()} />;
+  return <Desk data={deskSnapshot()} />;
 }
