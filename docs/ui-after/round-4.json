@@ -1,0 +1,101 @@
+{
+  "errors": [],
+  "results": [
+    {
+      "name": "r4-today-ink-390x844",
+      "overflow": false
+    },
+    {
+      "name": "r4-ask-ink-390x844",
+      "overflow": false
+    },
+    {
+      "name": "r4-watch-ink-390x844",
+      "overflow": false
+    },
+    {
+      "name": "r4-today-paper-390x844",
+      "overflow": false
+    },
+    {
+      "name": "r4-ask-paper-390x844",
+      "overflow": false
+    },
+    {
+      "name": "r4-watch-paper-390x844",
+      "overflow": false
+    },
+    {
+      "name": "r4-today-ink-360x740",
+      "overflow": false
+    },
+    {
+      "name": "r4-ask-ink-360x740",
+      "overflow": false
+    },
+    {
+      "name": "r4-watch-ink-360x740",
+      "overflow": false
+    },
+    {
+      "name": "r4-today-paper-360x740",
+      "overflow": false
+    },
+    {
+      "name": "r4-ask-paper-360x740",
+      "overflow": false
+    },
+    {
+      "name": "r4-watch-paper-360x740",
+      "overflow": false
+    },
+    {
+      "name": "r4-today-ink-430x932",
+      "overflow": false
+    },
+    {
+      "name": "r4-ask-ink-430x932",
+      "overflow": false
+    },
+    {
+      "name": "r4-watch-ink-430x932",
+      "overflow": false
+    },
+    {
+      "name": "r4-today-paper-430x932",
+      "overflow": false
+    },
+    {
+      "name": "r4-ask-paper-430x932",
+      "overflow": false
+    },
+    {
+      "name": "r4-watch-paper-430x932",
+      "overflow": false
+    },
+    {
+      "name": "r4-today-ink-1280x800",
+      "overflow": false
+    },
+    {
+      "name": "r4-ask-ink-1280x800",
+      "overflow": false
+    },
+    {
+      "name": "r4-watch-ink-1280x800",
+      "overflow": false
+    },
+    {
+      "name": "r4-today-paper-1280x800",
+      "overflow": false
+    },
+    {
+      "name": "r4-ask-paper-1280x800",
+      "overflow": false
+    },
+    {
+      "name": "r4-watch-paper-1280x800",
+      "overflow": false
+    }
+  ]
+}

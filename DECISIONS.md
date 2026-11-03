@@ -91,3 +91,9 @@ This pass deliberately does not fabricate biographies, ratings, dividend fields 
 advanced research lenses where structured evidence is absent. Streaming and advanced
 charts remain limited to supported modules. Performance budgets and the full original
 interaction wish list must be reported as unverified where not measured or implemented.
+
+Final UI validation reached Lighthouse mobile 97 performance / 100 accessibility /
+100 best practices, LCP 1.4 seconds in a local production run. Source JSON remains
+committed; exact passages load after first paint through a precached endpoint. This
+preserves offline research while reducing initial HTML. See docs/UI_REVIEW.md for
+all measured results and the explicit interaction cuts; not every wishlist item shipped.

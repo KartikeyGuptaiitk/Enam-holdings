@@ -22,7 +22,13 @@ import { Gap } from "./ask/gap";
 import { Ring } from "./ask/ring";
 import { percent } from "../lib/format";
 import { credibility } from "../lib/math";
-function historyReplace(params:URLSearchParams){window.history.replaceState(null,"",`/${params.size?"?"+params.toString():""}`)}
+function historyReplace(params: URLSearchParams) {
+  window.history.replaceState(
+    null,
+    "",
+    `/${params.size ? "?" + params.toString() : ""}`,
+  );
+}
 type Data = ReturnType<typeof snapshot>;
 type Bar = {
   date: string;
@@ -35,7 +41,37 @@ const fmt = (n: number) =>
   new Intl.NumberFormat("en-IN", { maximumFractionDigits: 1 }).format(n);
 const label = (s: string) => s.replaceAll("_", " ");
 const signed = percent;
-function Icon({name}:{name:string}) {return <svg className="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">{name==="Today"?<><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M8 4v16m4-11h6m-6 4h6"/></>:name==="Watch"?<><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></>:<><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></>}</svg>}
+function Icon({ name }: { name: string }) {
+  return (
+    <svg
+      className="icon"
+      aria-hidden="true"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    >
+      {name === "Today" ? (
+        <>
+          <rect x="3" y="4" width="18" height="16" rx="1" />
+          <path d="M8 4v16m4-11h6m-6 4h6" />
+        </>
+      ) : name === "Watch" ? (
+        <>
+          <circle cx="12" cy="12" r="8" />
+          <path d="M12 7v5l3 2" />
+        </>
+      ) : (
+        <>
+          <circle cx="10" cy="10" r="6" />
+          <path d="m15 15 6 6" />
+        </>
+      )}
+    </svg>
+  );
+}
 export function Spark({
   values,
   color = "currentColor",
@@ -100,6 +136,7 @@ export default function Desk({ data }: { data: Data }) {
     categories: ["results", "M&A", "management_change"],
     ticker: "",
   });
+  const [researchReady, setResearchReady] = useState(false);
   const taps = useRef(0);
   const touch = useRef(0);
   useEffect(() => {
@@ -114,11 +151,11 @@ export default function Desk({ data }: { data: Data }) {
         setRead(saved.read || []);
       }
     } catch {}
-    const params=new URLSearchParams(location.search);
-    const windowDays=Number(params.get('window'));
-    if([1,3,7,30].includes(windowDays))setDays(windowDays);
-    if(params.get('company'))setCompany(params.get('company')!);
-    if(params.get('category'))setCategory(params.get('category')!);
+    const params = new URLSearchParams(location.search);
+    const windowDays = Number(params.get("window"));
+    if ([1, 3, 7, 30].includes(windowDays)) setDays(windowDays);
+    if (params.get("company")) setCompany(params.get("company")!);
+    if (params.get("category")) setCategory(params.get("category")!);
     setReady(true);
     setOnline(navigator.onLine);
     const on = () => setOnline(navigator.onLine);
@@ -138,15 +175,43 @@ export default function Desk({ data }: { data: Data }) {
     };
   }, []);
   useEffect(() => {
-    if (ready) try {
-      localStorage.setItem(
-        "finn-state",
-        JSON.stringify({ rule, pins, muted, history, inbox, read }),
-      );
-    } catch {}
+    if (ready)
+      try {
+        localStorage.setItem(
+          "finn-state",
+          JSON.stringify({ rule, pins, muted, history, inbox, read }),
+        );
+      } catch {}
   }, [ready, rule, pins, muted, history, inbox, read]);
-  useEffect(()=>{if(!ready||tab!=="Today")return;const params=new URLSearchParams();if(days!==1)params.set('window',String(days));if(company)params.set('company',company);if(category!=="all")params.set('category',category);historyReplace(params);},[ready,tab,days,company,category]);
-  useEffect(()=>{let active=true;fetch('/api/desk').then(r=>{if(!r.ok)throw Error('Snapshot unavailable');return r.json()}).then(json=>{const saved=Object.fromEntries(Object.entries(json).map(([t,r])=>[t,ResearchSchema.parse(r)]));if(active)setResearch(current=>({...current,...saved}))}).catch(()=>{});return()=>{active=false}},[]);
+  useEffect(() => {
+    if (!ready || tab !== "Today") return;
+    const params = new URLSearchParams();
+    if (days !== 1) params.set("window", String(days));
+    if (company) params.set("company", company);
+    if (category !== "all") params.set("category", category);
+    historyReplace(params);
+  }, [ready, tab, days, company, category]);
+  useEffect(() => {
+    let active = true;
+    fetch("/api/desk")
+      .then((r) => {
+        if (!r.ok) throw Error("Snapshot unavailable");
+        return r.json();
+      })
+      .then((json) => {
+        const saved = Object.fromEntries(
+          Object.entries(json).map(([t, r]) => [t, ResearchSchema.parse(r)]),
+        );
+        if (active) setResearch((current) => ({ ...current, ...saved }));
+      })
+      .catch(() => {})
+      .finally(() => {
+        if (active) setResearchReady(true);
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
   const go = (t: string) => {
     setTab(t);
     window.history.replaceState(
@@ -251,7 +316,9 @@ export default function Desk({ data }: { data: Data }) {
     );
     const t =
       found?.ticker ||
-      (/^[A-Z0-9&-]{1,20}$/.test(token ?? "") && (raw.split(/\s/).length === 1 || /^[A-Z0-9&-]{1,20}$/.test(raw.split(/\s/)[0]))
+      (/^[A-Z0-9&-]{1,20}$/.test(token ?? "") &&
+      (raw.split(/\s/).length === 1 ||
+        /^[A-Z0-9&-]{1,20}$/.test(raw.split(/\s/)[0]))
         ? token
         : ticker);
     setTicker(t);
@@ -322,7 +389,10 @@ export default function Desk({ data }: { data: Data }) {
           <tbody>
             {s.rows.slice(0, compact ? 4 : 5).map((row) => (
               <tr key={row.name}>
-                <td>{row.name}<Spark values={row.values.slice(-8)} color="var(--muted)"/></td>
+                <td>
+                  {row.name}
+                  <Spark values={row.values.slice(-8)} color="var(--muted)" />
+                </td>
                 <td>
                   <button
                     className="number-link"
@@ -373,7 +443,7 @@ export default function Desk({ data }: { data: Data }) {
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         className={`filing ${f.priority >= 70 ? "lead" : "compact-filing"}`}
-        style={{"--priority":`${f.priority}%`} as React.CSSProperties}
+        style={{ "--priority": `${f.priority}%` } as React.CSSProperties}
         key={`${f.ticker}-${f.id}`}
         onTouchStart={(e) => (touch.current = e.touches[0].clientX)}
         onTouchEnd={(e) => {
@@ -411,7 +481,10 @@ export default function Desk({ data }: { data: Data }) {
             ? f.body.replace(/\s+/g, " ").split(" ").slice(0, 18).join(" ")
             : "New exchange disclosure; review the original before making an investment decision."}
         </p>
-        {f.category === "results" && r && (open || f.priority >=70) && results(r, true)}
+        {f.category === "results" &&
+          r &&
+          (open || f.priority >= 70) &&
+          results(r, true)}
         {f.category === "management_change" && passages.length > 0 && (
           <ManagementCard passages={passages} showSources={setSources} />
         )}
@@ -516,7 +589,14 @@ export default function Desk({ data }: { data: Data }) {
       </aside>
       <div className="main-wrap">
         <header className="topbar">
-<TerminalTools companies={data.portfolio} select={(t)=>{setTicker(t);setQuery(t);go("Ask")}}/>
+          <TerminalTools
+            companies={data.portfolio}
+            select={(t) => {
+              setTicker(t);
+              setQuery(t);
+              go("Ask");
+            }}
+          />
           <span className="edition">PRIVATE MARKETS OF ATTENTION</span>
           <span className="demo-badge">SAVED DATA</span>
           <span className="date">
@@ -568,15 +648,27 @@ export default function Desk({ data }: { data: Data }) {
                   IST
                 </span>
               </div>
-              <Pulse count={must.length+worth.length} ticker={shown[0]?.ticker}/>
-<div className="heat-label eyebrow">PORTFOLIO TEMPERATURE <span>DAY CHANGE / TAP TO FILTER</span></div>
-<div className="market-strip heat-grid">
+              <Pulse
+                count={must.length + worth.length}
+                ticker={shown[0]?.ticker}
+              />
+              <div className="heat-label eyebrow">
+                PORTFOLIO TEMPERATURE <span>DAY CHANGE / TAP TO FILTER</span>
+              </div>
+              <div className="market-strip heat-grid">
                 {movers.map((p) => (
                   <button
                     key={p.ticker}
-                    aria-pressed={company===p.ticker}
-                    data-direction={p.bar!.pct_change>=0?"up":"down"}
-                    style={{"--heat":Math.min(.30,.05+Math.abs(p.bar!.pct_change)*.04)} as React.CSSProperties}
+                    aria-pressed={company === p.ticker}
+                    data-direction={p.bar!.pct_change >= 0 ? "up" : "down"}
+                    style={
+                      {
+                        "--heat": Math.min(
+                          0.3,
+                          0.05 + Math.abs(p.bar!.pct_change) * 0.04,
+                        ),
+                      } as React.CSSProperties
+                    }
                     onClick={() => {
                       setCompany(company === p.ticker ? "" : p.ticker);
                     }}
@@ -593,7 +685,9 @@ export default function Desk({ data }: { data: Data }) {
                       values={(data.prices[p.ticker] as Bar[])
                         .slice(-20)
                         .map((x) => x.close)}
-                      color={p.bar!.pct_change >= 0 ? "var(--green)" : "var(--red)"}
+                      color={
+                        p.bar!.pct_change >= 0 ? "var(--green)" : "var(--red)"
+                      }
                     />
                   </button>
                 ))}
@@ -798,8 +892,10 @@ export default function Desk({ data }: { data: Data }) {
                   ),
                 )}
               </div>
-              <div className="lens-label eyebrow">CHOOSE A LENS <span>Saved evidence · no model calls</span></div>
-<div className="chips module-chips">
+              <div className="lens-label eyebrow">
+                CHOOSE A LENS <span>Saved evidence · no model calls</span>
+              </div>
+              <div className="chips module-chips">
                 {[
                   "Numbers vs narrative",
                   "Financial snapshot",
@@ -809,7 +905,19 @@ export default function Desk({ data }: { data: Data }) {
                   <button
                     key={m}
                     className={module === m ? "selected" : ""}
-                    title={({"Numbers vs narrative":"Explicit targets beside subsequent disclosures","Financial snapshot":"Quarterly numbers, margins and change","Guidance":"Management’s numeric forward statements","Cash quality":"Cash generation beside reported profit"} as Record<string,string>)[m]}
+                    title={
+                      (
+                        {
+                          "Numbers vs narrative":
+                            "Explicit targets beside subsequent disclosures",
+                          "Financial snapshot":
+                            "Quarterly numbers, margins and change",
+                          Guidance: "Management’s numeric forward statements",
+                          "Cash quality":
+                            "Cash generation beside reported profit",
+                        } as Record<string, string>
+                      )[m]
+                    }
                     onClick={() => {
                       setModule(m);
                       setQuery("");
@@ -819,10 +927,10 @@ export default function Desk({ data }: { data: Data }) {
                   </button>
                 ))}
               </div>
-              {loading ? (
+              {loading || !researchReady ? (
                 <div className="loading" role="status">
                   <div className="spinner" />
-                  <h2>{loading}</h2>
+                  <h2>{loading || "Opening saved source passages…"}</h2>
                   <p>
                     Retrieving disclosures. Checking the source, not guessing.
                   </p>
@@ -977,8 +1085,11 @@ export default function Desk({ data }: { data: Data }) {
                   </p>
                 </section>
                 <section>
-                  <Timeline dates={alertItems.map(x=>x.date)} asOf={data.asOf}/>
-<div className="preview-stat">
+                  <Timeline
+                    dates={alertItems.map((x) => x.date)}
+                    asOf={data.asOf}
+                  />
+                  <div className="preview-stat">
                     <b>{alertItems.length}</b>
                     <div>
                       alerts would have fired
@@ -1023,23 +1134,42 @@ export default function Desk({ data }: { data: Data }) {
                         </small>
                       </button>
                     ))}
-                  <details className="preview-details"><summary>Inspect matching sessions</summary><div className="section-label">
-                    <span>LIVE RULE PREVIEW</span>
-                    <span>Most recent first</span>
-                  </div>
-                  {alertItems.slice(0, 15).map((a) => (
-                    <div className="alert-row" key={`${a.ticker}-${a.id}-${a.text}`}>
-                      <b>{a.ticker}</b>
-                      <span>{a.text}</span>
-                      <small>
-                        {a.date} · {a.kind}
-                      </small>
+                  <details className="preview-details">
+                    <summary>Inspect matching sessions</summary>
+                    <div className="section-label">
+                      <span>LIVE RULE PREVIEW</span>
+                      <span>Most recent first</span>
                     </div>
-                  ))}
+                    {alertItems.slice(0, 15).map((a) => (
+                      <div
+                        className="alert-row"
+                        key={`${a.ticker}-${a.id}-${a.text}`}
+                      >
+                        <b>{a.ticker}</b>
+                        <span>{a.text}</span>
+                        <small>
+                          {a.date} · {a.kind}
+                        </small>
+                      </div>
+                    ))}
                   </details>
                 </section>
               </div>
-              <Holdings items={movers.map(p=>({ticker:p.ticker,weight_pct:p.weight_pct,move:p.bar!.pct_change,volume:p.bar!.vol_ratio,values:(data.prices[p.ticker] as Bar[]).slice(-20).map(x=>x.close)}))} select={t=>{setTicker(t);go("Ask")}}/>
+              <Holdings
+                items={movers.map((p) => ({
+                  ticker: p.ticker,
+                  weight_pct: p.weight_pct,
+                  move: p.bar!.pct_change,
+                  volume: p.bar!.vol_ratio,
+                  values: (data.prices[p.ticker] as Bar[])
+                    .slice(-20)
+                    .map((x) => x.close),
+                }))}
+                select={(t) => {
+                  setTicker(t);
+                  go("Ask");
+                }}
+              />
             </>
           )}
           <footer className="page-footer">
@@ -1077,66 +1207,68 @@ export default function Desk({ data }: { data: Data }) {
         )}
       </AnimatePresence>
       {sources && (
-        <Sheet title="Source passages" close={()=>setSources(null)}>
-          <button aria-label="Close sources" className="text-button" onClick={()=>setSources(null)}>Back to research</button>
-            {sources.map((s, i) => (
-              <article className="source" key={i}>
-                <div className="eyebrow">
-                  {s.doc_id} ·{" "}
-                  {s.page ? `PAGE ${s.page}` : "STANDARDIZED TABLE"}
-                </div>
-                <p className="muted">{s.period}</p>
-                <blockquote>{s.text}</blockquote>
-<button className="text-button" onClick={()=>{navigator.clipboard?.writeText(`${s.doc_id} · ${s.period} · p.${s.page}: ${s.text}`).then(()=>action("Citation copied")).catch(()=>action("Copy unavailable in this browser"))}}>Copy citation ↗</button>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href={s.url + (s.page ? `#page=${s.page}` : "")}
-                >
-                  Open original source ↗
-                </a>
-              </article>
-            ))}
+        <Sheet title="Source passages" close={() => setSources(null)}>
+          <button
+            aria-label="Close sources"
+            className="text-button"
+            onClick={() => setSources(null)}
+          >
+            Back to research
+          </button>
+          {sources.map((s, i) => (
+            <article className="source" key={i}>
+              <div className="eyebrow">
+                {s.doc_id} · {s.page ? `PAGE ${s.page}` : "STANDARDIZED TABLE"}
+              </div>
+              <p className="muted">{s.period}</p>
+              <blockquote>{s.text}</blockquote>
+              <button
+                className="text-button"
+                onClick={() => {
+                  navigator.clipboard
+                    ?.writeText(
+                      `${s.doc_id} · ${s.period} · p.${s.page}: ${s.text}`,
+                    )
+                    .then(() => action("Citation copied"))
+                    .catch(() => action("Copy unavailable in this browser"));
+                }}
+              >
+                Copy citation ↗
+              </button>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={s.url + (s.page ? `#page=${s.page}` : "")}
+              >
+                Open original source ↗
+              </a>
+            </article>
+          ))}
         </Sheet>
       )}
       {custom && (
-        <div className="sheet-backdrop">
-          <section
-            className="sheet"
-            role="dialog"
-            aria-label="Custom date range"
-          >
-            <div className="sheet-header">
-              <h2>Choose your window.</h2>
-              <button
-                onClick={() => setCustom(false)}
-                aria-label="Close date range"
-              >
-                ×
-              </button>
-            </div>
-            <label className="field">
-              From
-              <input
-                type="date"
-                value={from}
-                onChange={(e) => setFrom(e.target.value)}
-              />
-            </label>
-            <label className="field">
-              To
-              <input
-                type="date"
-                value={to}
-                min={from}
-                onChange={(e) => setTo(e.target.value)}
-              />
-            </label>
-            <button className="primary full" onClick={() => setCustom(false)}>
-              Apply window
-            </button>
-          </section>
-        </div>
+        <Sheet title="Choose your window." close={() => setCustom(false)}>
+          <label className="field">
+            From
+            <input
+              type="date"
+              value={from}
+              onChange={(e) => setFrom(e.target.value)}
+            />
+          </label>
+          <label className="field">
+            To
+            <input
+              type="date"
+              value={to}
+              min={from}
+              onChange={(e) => setTo(e.target.value)}
+            />
+          </label>
+          <button className="primary full" onClick={() => setCustom(false)}>
+            Apply window
+          </button>
+        </Sheet>
       )}
       {debug && (
         <div className="sheet-backdrop">
@@ -1244,13 +1376,20 @@ function ResearchCards({
               <h2>Promises need a period.</h2>
               <p>Explicit forward statements, with the evidence kept close.</p>
             </div>
-            <div className="credibility-score" style={{display:"none"}}>
+            <div className="credibility-score" style={{ display: "none" }}>
               {score ?? "—"}
               <small>{score === null ? "Not scored" : "/ 100"}</small>
             </div>
           </div>
-          <Ring score={score} counts={Object.fromEntries(["met","partially","missed","unclear","not_yet_due"].map(v=>[v,promises.filter(p=>p.verdict===v).length]))}/>
-<div className="evidence-note">
+          <Ring
+            score={score}
+            counts={Object.fromEntries(
+              ["met", "partially", "missed", "unclear", "not_yet_due"].map(
+                (v) => [v, promises.filter((p) => p.verdict === v).length],
+              ),
+            )}
+          />
+          <div className="evidence-note">
             Verdicts compare the same metric and currency basis across completed
             periods. Pending targets are excluded from the score; every
             comparison opens both passages.
@@ -1269,7 +1408,9 @@ function ResearchCards({
                   <span className="muted">
                     {p.sources[0].period.split(" Transcript")[0]}
                   </span>
-                  <span className={`verdict verdict-${p.verdict}`}>{label(p.verdict)}</span>
+                  <span className={`verdict verdict-${p.verdict}`}>
+                    {label(p.verdict)}
+                  </span>
                 </div>
                 <h3>{p.statement}</h3>
                 <div className="promise-compare">
@@ -1286,7 +1427,7 @@ function ResearchCards({
                     </b>
                   </div>
                 </div>
-                <Gap target={p.target || ""} delivered={p.delivered}/>
+                <Gap target={p.target || ""} delivered={p.delivered} />
                 <button
                   className="source-button"
                   onClick={() => showSources(p.sources)}

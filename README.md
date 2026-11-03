@@ -3,6 +3,23 @@
 A mobile-first filter for financial filings, with a saved NSE digest, configurable
 alerts and primary-source research. The committed snapshot runs without API keys.
 
+## The Desk Terminal UI
+
+Ink and paper editions use locally hosted Newsreader, Inter Tight and JetBrains Mono.
+Try these first: tap a portfolio heat tile to filter Today; change Watch thresholds and
+replay the inbox; open a statement's exact sources in Ask. Press `/` or Ctrl/Cmd+K to
+search companies. Settings includes theme, density, optional haptics and a short guide.
+
+[Today, ink](docs/ui-after/r5-today-ink-390x844.png) ·
+[Today, paper](docs/ui-after/r5-today-paper-390x844.png) ·
+[Statement ledger](docs/ui-after/r5-ask-ink-390x844.png) ·
+[Alert instrument panel](docs/ui-after/r5-watch-ink-390x844.png) ·
+[Source drawer](docs/ui-after/r5-sources-ink-390x844.png).
+
+Visual rounds, viewport matrices and performance reports are under `docs/ui-after/`;
+recorded browser sessions are under `docs/demo/`. See `docs/UI_REVIEW.md` for measured
+results and the interaction requirements that remain incomplete.
+
 ## Run
 
 Requires Node 22+ and Python 3.11+ only for optional ingestion.

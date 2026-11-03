@@ -1,1 +1,32 @@
-export function Ring({score,counts}:{score:number|null;counts:Record<string,number>}){return <div className="track-record"><div className="score-ring" role="img" aria-label={`Selected statement score ${score??'unavailable'}`} style={{background:`conic-gradient(var(--accent) ${(score??0)*3.6}deg, var(--line) 0)`}}><div><b>{score??'—'}</b><small>SELECTED CLAIMS</small></div></div><div className="verdict-counts">{Object.entries(counts).map(([k,v])=><span key={k}><b>{v}</b> {k.replaceAll('_',' ')}</span>)}</div></div>}
+export function Ring({
+  score,
+  counts,
+}: {
+  score: number | null;
+  counts: Record<string, number>;
+}) {
+  return (
+    <div className="track-record">
+      <div
+        className="score-ring"
+        role="img"
+        aria-label={`Selected statement score ${score ?? "unavailable"}`}
+        style={{
+          background: `conic-gradient(var(--accent) ${(score ?? 0) * 3.6}deg, var(--line) 0)`,
+        }}
+      >
+        <div>
+          <b>{score ?? "—"}</b>
+          <small>SELECTED CLAIMS</small>
+        </div>
+      </div>
+      <div className="verdict-counts">
+        {Object.entries(counts).map(([k, v]) => (
+          <span key={k}>
+            <b>{v}</b> {k.replaceAll("_", " ")}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}

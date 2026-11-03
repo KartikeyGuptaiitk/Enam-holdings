@@ -22,3 +22,23 @@ Completed README, ~400-word writeup, decisions and reproducible QA evidence. Sav
 install_script/start_skill draft; user publication remains separate. GitHub read access
 works without new credentials. Vercel access is absent, so deployment was not attempted.
 No live refresh was run or source snapshots altered. Bounded secret-pattern scan passed.
+
+
+UI overhaul: began with the requested baseline, a 15-point critique and mobile state
+captures. Baseline: 47 unit tests/typecheck passed; lint exposed the old CommonJS QA
+script, corrected before proceeding. Development baseline also exposed duplicate React
+keys. Built the Desk Terminal tokens, licensed local fonts, ink/paper themes, heat grid,
+compact disclosure rows, result sparklines, statement ring/range markers, Watch timeline,
+holdings sorting and accessible search/settings/source/date sheets. Review corrected an
+overlong header, buried alert controls, paper contrast and a clipped toast. Three
+production matrices (r3/r4/r5) complement earlier development critique captures.
+The original full snapshot imposed severe first-load cost. Added a presentation-only
+view model, deferred exact research loading and service-worker precaching; original
+financial/scoring/classification functions and committed source data remain unchanged.
+Font subsetting shrank local font payloads. Tests cover formatting, range visualization
+and preservation of financial tables. Offline acceptance was repeated after the change.
+Final acceptance: 50 tests, typecheck, lint and production build pass. Final Lighthouse
+mobile: 97 performance, 100 accessibility, 100 best practices, LCP 1.4s. Three production
+viewport/theme matrices passed without overflow. Additional loading/search/settings/
+unavailable/404 captures completed. Full offline Ask reload and WIPRO citation check
+passed. Reported interaction cuts explicitly in docs/UI_REVIEW.md. No deployment or push.
